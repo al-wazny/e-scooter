@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+/** === NAV-AREA === **/
+
+nav {
+	width: 100%;
+	height: 3rem;
+	background-color: green;
+}
+
+nav > a {
+	height: inherit;
+	text-decoration: none;
+	font-size: 1.25rem;
+	color: orange;
+	vertical-align: middle;
+}
+
+/** === MAIN-SCOOTER-LEND AREA === **/
+.scooter-canvas {
+	display: flex;
+	flex-direction: row;
+	background-color: red;
+}
+
+.product-text {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 100%;
+}
+
+.product-text p{
+	font-size: 1.2rem
+}
+
+.product-text .product-info > p {
+	max-width: 30rem;
+}
+
+.product-text .product-info > h2 {
+	font-size: 1.75rem;
+}
+
+.product-text .product-price {
+	padding-right: 2em
+}
+
+.product-text .product-price > h2 {
+	margin-bottom: .25em;
+}
+
+.product-text .product-price > p {
+	margin-top: 0;
+}
+
+ img {
+	 height: 12.5rem;
+	 width: auto;
+	 padding: .5em;
+ }
