@@ -1,6 +1,3 @@
-<?php 
-require('registrationHandler.php');
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +9,7 @@ require('registrationHandler.php');
     <title>Document</title>
 </head>
 <body>
-    <form>    
+    <form action="registrationHandler.php">    
         <input type="text" placeholder="username" name="username">
         <input type="text" placeholder="password" name="password">
         <input type="text" placeholder="repeat password" name="passwordRepeat">

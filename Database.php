@@ -1,14 +1,14 @@
 <?php
 class Database {
 
-    private $host = '172.17.0.2';
-    private $user = 'todolist';
+    private $host = '127.0.0.1:6033';
+    private $user = 'user';
     private $pass = 'password';
-    private $dbname = 'todolist';
+    private $dbname = 'db';
 
-    private $connection;
-    private $err;
-    private $stmt;
+    protected $connection;
+    protected $err;
+    protected $stmt;
 
     public function __construct()
     {
@@ -21,6 +21,11 @@ class Database {
             echo $this->err;
         }
 
+    }
+
+    public function addUser($username, $password) {
+        $sql = "INSERT INTO users (username, password) VALUES ('.$username.', '.$password.')";
+        $this->connection->query($sql);
     }
 
     
