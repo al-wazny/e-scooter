@@ -29,13 +29,22 @@ class Database {
     }
 
     public function getUser($username){
-        $sql = "SELECT password FROM users WHERE username='.$username.'";
+        $sql = "SELECT password FROM users WHERE username='$username'";
         $result = $this->connection->query($sql);
 
         if($result->num_rows <= 0) {
-            return "username or password might be wrong";
+            return false;
         }
-        $user = $result->fetch_assoc();
+        return $result->fetch_assoc();
     }
-    
+
+    public function loginHandler($username, $password) {
+        $user = $this->getUser($username);
+
+        if (password_verify($password, $user['password'])) {
+            session_start();
+            $_SESSION['userID'] = uuid($username);
+        }
+    }
+    //! create function: checkIfExist
 }
