@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="registrationHandler.php">    
+    <form action="registrationHandler.php" method='post'>    
         <input type="text" placeholder="username" name="username">
         <input type="text" placeholder="password" name="password">
         <input type="text" placeholder="repeat password" name="passwordRepeat">

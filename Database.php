@@ -25,8 +25,17 @@ class Database {
 
     public function addUser($username, $password) {
         $sql = "INSERT INTO users (username, password) VALUES ('.$username.', '.$password.')";
-        $this->connection->query($sql);
+        return $this->connection->query($sql);
     }
 
+    public function getUser($username){
+        $sql = "SELECT password FROM users WHERE username='.$username.'";
+        $result = $this->connection->query($sql);
+
+        if($result->num_rows <= 0) {
+            return "username or password might be wrong";
+        }
+        $user = $result->fetch_assoc();
+    }
     
 }
