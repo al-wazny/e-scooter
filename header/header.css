@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #212121;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(248, 246, 246);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+a.anmelden{
+  float: right;
+  display: block;
+  color: rgb(248, 246, 246);
+  text-align: center;
+  padding: 14px 30px;
+  margin-right: 20px;
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+div.sprache{
+  float: right;
+  padding: 14px 16px;
+  margin-top: 30px;
+}
+div.search-container {
+  float: right;
+  outline: none;
+    }
+
+.topnav input[type=text] {
+  padding:5px;
+  margin-top: 6px;
+  font-size: 17px;
+  color: #ddd;
+  background-color: #212121;
+  border-right:none;
+  content: none;
+}
+TODO
+
+div.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 10px;
+  margin-right: 16px;
+  background: #212121;
+  font-size: 17px;
+  color: #ddd;
+  border: 0;
+  cursor: pointer;
+}
+img.CompanyLogo{
+  padding: 6px 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  width: 100px;
+}
+
+
+
