@@ -1,4 +1,6 @@
 <?php
+namespace Model\defaultDatabase
+
 class Database {
 
     private $host = '127.0.0.1:6033';
