@@ -39,12 +39,21 @@ div.search-container {
   padding:5px;
   margin-top: 6px;
   font-size: 17px;
-  color: #ddd;
+  color: rgb(255, 255, 255);
   background-color: #212121;
   border-right:none;
   content: none;
 }
 TODO
+button{
+  padding:5px;
+  margin-top: 6px;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  background-color: #212121;
+  border-right:none;
+  content: none;
+}
 
 div.search-container button {
   float: right;
@@ -53,7 +62,7 @@ div.search-container button {
   margin-right: 16px;
   background: #212121;
   font-size: 17px;
-  color: #ddd;
+  color: rgb(255, 255, 255);
   border: 0;
   cursor: pointer;
 }
