@@ -1,5 +1,9 @@
 <?php
-include('Database.php');
+include('./Database.php');
+
+$username = $_POST['username'];
+$password = $_POST['password'];
 
 $db = new Database();
-$db->getUser($_GET['username']);
+
+$db->loginHandler($username, $password);
