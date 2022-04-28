@@ -1,10 +1,10 @@
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url('../Images/e-scooter.jpg');
+   background-image: url('../Images/e-scooter.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  min-height: 100%;
+  min-zoom: 100%;
   }
 
 a.login{
@@ -58,25 +58,26 @@ width: 150;
  }
 .searchbar form{
   height: 48px;
-  padding: 0px 280px;
+  padding: 0px 240px;
+  padding-right: 20px;
   width: 500px;
-  margin-top: 25px;
+  margin-top: 15px;
    display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  position: relative;
+   align-items: center;
+  position:  unset;
    flex: 0 0 auto;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.07);
-}
+    border-radius: 24px;
+    background-color: rgb(255, 255, 255);
+ }
 .searchbar input{
-  height: 48;
+  height: 48px;
   width: 500%;
   border-radius:24px ;
   color: rgb(51, 51, 51);
-  margin-top: -7px;
+  margin-top: 0px;
   border: none;
   padding-left: -5px;
-  margin-left: -7cm;
+  margin-left: -6cm;
   margin-right: -7.5cm;
   background-color:  rgb(255, 255, 255);
   outline: transparent;
@@ -97,11 +98,11 @@ width: 150;
   height: 48px;
   line-height: 16px;
   margin-bottom :10px;
-  margin-left: 455px;
+  margin-left: 300px;
   margin-right: 1px;
   padding-bottom: 0px;
   padding: 0px 0px;
-  padding-left: 0px;
+  padding-left: 5px;
   padding-right: 28.5cm;
   padding-top: 0px;
   position :absolute;
