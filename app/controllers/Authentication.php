@@ -84,3 +84,8 @@ class authentication extends Controller
         header("location: ../../index.php/authentication/login");
     }
 }
+
+//TODO DB users email column hinzufügen
+//TODO DB auto-increment id Scooters
+//TODO DB Foreign Key 'currenOwner'
+
