@@ -6,18 +6,6 @@ class Controller {
 
     protected $model;
 
-    public function __construct()
-    {
-        if (!$this->isLoggedIn()) {
-            header("location: ../../authentication/login");
-        }
-    }
-
-    private function isLoggedIn()
-    {
-        return (!empty($_SESSION['user'])) ? true : false;
-    }
-
     /*
      * So, if post is passed to the model method, it would require the model
      * and then return it. Something like new Post();

@@ -8,30 +8,17 @@ class Pages extends Controller {
 
     public function __construct()
     {
-        parent::__construct();
-        $this->pagesModel = $this->model('Pages_data');
-        $this->todoModel = $this->model('TodoModel');
         $this->authModel = $this->model('authenticationModel');
     }
 
     public function index () // default method if there is no method
     {
-        $posts = $this->pagesModel->getTodos();
-
-        $this->todoModel->emptyTypes();
-
-        $posts = $this->authModel->isAuthor($posts);
-
-        $data = [
-            'task' => $posts,
-        ];
-
-        $this->view('index', $data);
+        $this->view('index');
     }
 
     public function create ()
     {
-        $types = $this->pagesModel->getTypes();
+        $types = $this->pagesModel->getTypess();
 
         $data = [
             'type' => $types,

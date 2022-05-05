@@ -33,7 +33,7 @@ class Core {
     public function __construct() {
         // If you want to output the value of the array use print_r($this->getUrl());
         $url = $this->getUserURL();
-
+        var_dump($url);
         // TODO ask if $_SERVER['REQUEST_METHOD'] == $_POST und dann darauf die Login-daten entnehmen
         
         /*
@@ -43,14 +43,14 @@ class Core {
          */
         if(file_exists(APP_ROOT. '/controllers/'. ucwords($url[1]) . '.php')){
             // if the file exists, we set it as the current controller
-            $this->currentController = ucwords($url[1]); // our default controller is Pages, which is defined above, anything founded would override it.
+            $this->currentController = ucwords($url[2]); // our default controller is Pages, which is defined above, anything founded would override it.
             /*
              * Unset the 0 index, The unset() function would delete index 0, but would leave the other indexes
              * You'll see the reason we ae using this below
              */
             // unset the 0 index
 
-            unset($url[1]);
+            unset($url[2]);
         }
 
 
@@ -68,7 +68,7 @@ class Core {
          * then the second parameter would be music
          */
 
-        if(isset($url[2])) {
+        if(isset($url[3])) {
             //check to see if methods exist in controller
             /*
              * method_exist takes two parameter, we are checking the currentcontroller first
@@ -79,7 +79,7 @@ class Core {
                 // so, the method would have to exist in the $this->currentController class, for example Pages.
                 $this->currentmethod = $url[2];
                 // unset the 0 index
-                unset($url[2]);
+                unset($url[3]);
             }
 
         }
