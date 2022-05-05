@@ -23,16 +23,5 @@ border-radius: 10px;
 .information h4{
     margin-left: 20px;
  }
- .information span{
-     color: red;
- }
- input[type=date]::-webkit-input-placeholder{
-     border-radius: 24px;
-     width: 100%;
-     appearance: none;
-     margin-bottom: 10px;
-     padding-right: 80px;
- }
-
  
  
