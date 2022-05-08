@@ -10,7 +10,7 @@
             <a class="CompanyLogo" href="header\header.html"> 
                 <img class="CompanyLogo" src="assets/Images/CompanyLogo.png" alt="Company Logo">
             </a>
-            <a class="login" href="index.html/Authentication/registrate" target="_top">Registrieren</a>
+            <a class="login" href="Authentication/registrate" target="_top">Registrieren</a>
             
             <div class="bar">
                 <div class="Categoriesbar">
