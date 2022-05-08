@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/53a65f1db8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
     <title>Title</title>
 </head>
 <body>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-class authentication extends Controller
+class Authentication extends Controller
 {
 
     private $authModel;

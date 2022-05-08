@@ -13,13 +13,7 @@ class Pages extends Controller {
 
     public function index () // default method if there is no method
     {
-<<<<<<< HEAD
-        $this->view('index');
-=======
-
-
         $this->view('index', $data);
->>>>>>> c48d043ec287f0c1fe87388d04d2f50ca207a33e
     }
 
     public function create ()
