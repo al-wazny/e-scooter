@@ -40,38 +40,40 @@ class Authentication extends Controller
 
     public function registrationHandler($info)
     {
-        $password = trim($info['password']);
-        $username = trim($info['username']);
-
-        if (preg_match('/^[A-Za-z0-9]+$/', $username))
-        {
-            if (empty($password) || empty($username))
-            {
-                $data['error'] = "No Input given";
-                return $this->view("pages/registrate", $data);
-
-            } elseif (strlen($password) > 20 || strlen($username)  > 20) {
-                $data['error'] = "Input is too long";
-                return $this->view("pages/registrate", $data);
-            }
-
-            if ($this->authModel->repeatPassword($info['password'], $info['passwordRepeat']))
-            {
-                if ($this->authModel->createUser($info))
-                {
-                    $this->authModel->login($info['username']);
-
-                    header("location: ../../index.php/pages/index");
-                } else {
-                    $data['error'] = "User already Exist";
-                }
-
-            } else {
-                $data['error'] = "Password is not identical";
-            }
-        } else {
-            $data['error'] = "Username doesn't match pattern";
+        foreach($info as $data) {
+            echo $data;
         }
+        // $password = trim($info['password']);
+        // $username = trim($info['username']);
+        // if (preg_match('/^[A-Za-z0-9]+$/', $username))
+        // {
+        //     if (empty($password) || empty($username))
+        //     {
+        //         $data['error'] = "No Input given";
+        //         return $this->view("pages/registrate", $data);
+
+        //     } elseif (strlen($password) > 20 || strlen($username)  > 20) {
+        //         $data['error'] = "Input is too long";
+        //         return $this->view("pages/registrate", $data);
+        //     }
+
+        //     if ($this->authModel->repeatPassword($info['password'], $info['passwordRepeat']))
+        //     {
+        //         if ($this->authModel->createUser($info))
+        //         {
+        //             $this->authModel->login($info['username']);
+
+        //             header("location: ../../index.php/pages/index");
+        //         } else {
+        //             $data['error'] = "User already Exist";
+        //         }
+
+        //     } else {
+        //         $data['error'] = "Password is not identical";
+        //     }
+        // } else {
+        //     $data['error'] = "Username doesn't match pattern";
+        // }
 
         $this->view("pages/registrate", $data);
     }

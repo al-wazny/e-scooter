@@ -10,7 +10,7 @@
 <a class="redirect" href="../../index.php">Zurueck zur Startseite</a>
 <div class="login">
     <h1>Registration</h1>
-    <form action="../../../index.php/Authentication/registrationHandler" method="get">
+    <form action="Authentication/registrationHandler" method="get">
         <label for="username">
             <i class="fas fa-user"></i>
         </label>
@@ -23,6 +23,31 @@
             <i class="fas fa-lock"></i>
         </label>
         <input type="password" name="passwordRepeat" placeholder="Repeat Password" id="password-repeat" required pattern="[A-Za-z0-9]{1,20}">
+        <label for="username">
+            <i class="fas fa-user"></i>
+        </label>
+        <input type="text" name="ZIP" placeholder="ZIP Code" required pattern="[A-Za-z0-9]{1,20}">
+        <label for="password">
+            <i class="fas fa-lock"></i>
+        </label>
+        <input type="text" name="adress" placeholder="Street and housenumber" required pattern="[A-Za-z0-9]{1,20}">
+        <label for="password-repeat">
+            <i class="fas fa-lock"></i>
+        </label>
+        <input type="text" name="city" placeholder="City" required pattern="[A-Za-z0-9]{1,20}">
+        <label for="username">
+            <i class="fas fa-user"></i>
+        </label>
+        <input type="date" name="birthday" placeholder="birthday" required pattern="[A-Za-z0-9]{1,20}">
+        <label for="password">
+            <i class="fas fa-lock"></i>
+        </label>
+        <input type="text" name="firstname" placeholder="firstname" required pattern="[A-Za-z0-9]{1,20}">
+        <label for="password-repeat">
+            <i class="fas fa-lock"></i>
+        </label>
+        <input type="text" name="lastname" placeholder="lastname" required pattern="[A-Za-z0-9]{1,20}">
+        
         <p style="color: red;"><?= $data['error'] ?></p>
         <input type="submit" name="Login" value="Registration">
     </form>

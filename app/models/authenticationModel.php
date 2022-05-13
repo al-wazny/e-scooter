@@ -80,14 +80,14 @@ class authenticationModel
         return $task;
     }
 
-    private function isAdmin()
+    public function isAdmin()
     {
         $user = $this->getUserInfo($_SESSION['username']);
 
         $author = $user->is_Admin;
 
         $author = boolval($author);
-
+        echo 'blub';
         return $author;
     }
 }

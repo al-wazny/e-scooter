@@ -2,13 +2,21 @@
 
 class Pages extends Controller {
 
-    private $pagesModel;
+    private $startPage;
     private $authModel;
-    private $todoModel;
 
     public function __construct()
     {
         $this->authModel = $this->model('authenticationModel');
+        $this->startPage = $this->model('startPageLoader');
+    }
+
+    public function index()
+    {
+
+        $data = $this->startPage->getScooters();
+        
+        $this->view('index', $data);
     }
 
     public function scooter() 
