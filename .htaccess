@@ -2,4 +2,4 @@ RewriteEngine on
 RewriteBase /   
 RewriteCond %{REQUEST_FILENAME} !-d            
 RewriteCond %{REQUEST_FILENAME} !-f        
-RewriteRule ^.*$ e-scooter/index.php?q=$1 [L] 
+RewriteRule ^.*$ htdocs/e-scooter/index.php?q=$1 [L] 
