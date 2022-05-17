@@ -19,8 +19,8 @@ class authenticationModel
             $password = password_hash($data['password'], PASSWORD_DEFAULT);
             $uuid = uniqid($username);
 
-            $query = 'INSERT INTO users (username, password, uuid, street_housenumber, city, zip_code, birthday, firstname, lastname)
-                      VALUES ('.$username.', '.$password.', '.$uuid.', '.$data['adress'].', '.$data['city'].','.$data['ZIP'].', '.$data['firstname'].','.$data['lastname'].')';
+            $query = "INSERT INTO users (username, password, uuid, street_housenumber, city, zip_code, birthday, firstname, lastname, email)
+                      VALUES ('".$username."', '".$password."', '".$uuid."', '".$data['adress']."', '".$data['city']."', '".$data['ZIP']."', '".$data['birthday']."', '".$data['firstname']."', '".$data['lastname']."', '".$data['email']."')";
 
             return $this->db->insert($query);
         }
@@ -84,7 +84,7 @@ class authenticationModel
         $author = $user->is_Admin;
 
         $author = boolval($author);
-        echo 'blub';
+
         return $author;
     }
 }

@@ -41,7 +41,7 @@
         <label for="username">
             <i class="fas fa-user"></i>
         </label>
-        <input type="date" name="birthday" placeholder="birthday" required pattern="[A-Za-z0-9]{1,20}">
+        <input type="date" name="birthday" placeholder="birthday" required>
         <label for="password">
             <i class="fas fa-lock"></i>
         </label>
@@ -50,6 +50,10 @@
             <i class="fas fa-lock"></i>
         </label>
         <input type="text" name="lastname" placeholder="lastname" required pattern="[A-Za-z0-9]{1,20}">
+        <label for="password-repeat">
+            <i class="fas fa-lock"></i>
+        </label>
+        <input type="email" name="email" placeholder="email" required>
         
         <p style="color: red;"><?= $_SESSION['registrationError'] // use session instead to rewrite url ?></p> 
         <input type="submit" name="Login" value="Registration">

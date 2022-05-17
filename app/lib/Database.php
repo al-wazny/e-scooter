@@ -76,7 +76,6 @@ class Database {
 
     public function insert($sql)
     {
-        //! function returns FALSE at the moment
         return $this->connection->query($sql);
     }
 

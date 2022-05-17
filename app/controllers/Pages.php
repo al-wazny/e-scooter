@@ -4,11 +4,13 @@ class Pages extends Controller {
 
     private $startPage;
     private $authModel;
+    private $productPage;
 
     public function __construct()
     {
         $this->authModel = $this->model('authenticationModel');
         $this->startPage = $this->model('startPageLoader');
+        $this->productPage = $this->model('productPageLoader');
     }
 
     public function index()
@@ -18,9 +20,10 @@ class Pages extends Controller {
         $this->view('index', $data);
     }
 
-    public function scooter() 
+    public function scooter($data) 
     {
-        $this->view('pages/scooter');
+        $data = $this->productPage->getScooter($data['id']);
+        $this->view('pages/scooter', $data);
     }
 
     public function login()
