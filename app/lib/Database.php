@@ -76,7 +76,7 @@ class Database {
 
     public function insert($sql)
     {
-        $this->connection->query($sql);
+        return $this->connection->query($sql);
     }
 
     public function getlastID()
@@ -96,7 +96,6 @@ class Database {
         return $this->stmt->fetch_object();
     }
 
-    // Get row count
     public function rowCount()
     {
         return $this->stmt->num_rows;

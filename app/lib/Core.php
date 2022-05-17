@@ -30,7 +30,7 @@ class Core {
         }
 
         // Get Params
-        $this->params = $_REQUEST ? array_values($_REQUEST) : [];
+        $this->params = $_REQUEST ? [$_REQUEST] : [];
 
         // call a callback with array of params
         call_user_func_array([$this->currentController, $this->currentmethod], $this->params);

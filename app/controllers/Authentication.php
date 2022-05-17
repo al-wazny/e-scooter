@@ -5,15 +5,12 @@ class Authentication extends Controller
 {
 
     private $authModel;
+    private $user;
 
     public function __construct()
     {
         $this->authModel = $this->model('authenticationModel');
-    }
-
-    public function login()
-    {
-        $this->view('pages/login');
+        $_SESSION['registrationError'] = '';
     }
 
     public function loginHandler($info)
@@ -23,7 +20,7 @@ class Authentication extends Controller
 
         if ($this->authModel->validatePassword($username, $password))
         {
-            $this->authModel->login($username);
+            $this->loginUser();
 
             header("location: ../../index.php/pages/index");
         } else {
@@ -33,59 +30,68 @@ class Authentication extends Controller
         }
     }
 
-    public function registrate()
-    {
-        $this->view('pages/registrate');
-    }
-
-    public function registrationHandler($info)
-    {
-        $password = trim($info['password']);
-        $username = trim($info['username']);
-
-        if (preg_match('/^[A-Za-z0-9]+$/', $username))
-        {
-            if (empty($password) || empty($username))
-            {
-                $data['error'] = "No Input given";
-                return $this->view("pages/registrate", $data);
-
-            } elseif (strlen($password) > 20 || strlen($username)  > 20) {
-                $data['error'] = "Input is too long";
-                return $this->view("pages/registrate", $data);
-            }
-
-            if ($this->authModel->repeatPassword($info['password'], $info['passwordRepeat']))
-            {
-                if ($this->authModel->createUser($info))
-                {
-                    $this->authModel->login($info['username']);
-
-                    header("location: ../../index.php/pages/index");
-                } else {
-                    $data['error'] = "User already Exist";
-                }
-
-            } else {
-                $data['error'] = "Password is not identical";
-            }
-        } else {
-            $data['error'] = "Username doesn't match pattern";
-        }
-
-        $this->view("pages/registrate", $data);
-    }
-
     public function logout()
     {
-        $_SESSION['user'] = '';
+        $_SESSION['uuid'] = '';
         $_SESSION['username'] = '';
 
-        header("location: ../../index.php/authentication/login");
+        $this->view('index');
+    }
+
+    protected function loginUser()
+    {
+        $_SESSION['uuid'] = $this->user['uuid'];
+        $_SESSION['username'] = $this->user['username'];
+
+        header('location: ../..');
+    }
+
+    public function registrationHandler($userData)
+    {
+        $this->user = $userData;
+
+        try {
+            $this->filterDataFromWhitespaces();
+            $this->validateInput();
+            $this->authModel->createUser($this->user);
+            $this->loginUser();
+        } catch (Exception $e) {
+            $_SESSION['registrationError'] = $e->getMessage();
+            header('location: ../../pages/registrate');
+        }
+    }
+
+    protected function filterDataFromWhitespaces()
+    {
+        foreach($this->user as &$data){
+            trim($data);
+        }
+    }
+
+    protected function validateInput()
+    {
+        if (preg_match('/^[A-Za-z0-9]+$/', $this->user['username']) && $this->validInputLength()) {
+            if ($this->user['password'] === $this->user['passwordRepeat']) {
+                return true;
+            } else {
+                throw new Exception('Passwords are not Identical');
+            }
+        } else {
+            throw new Exception('Username does not match the required pattern');
+        }
+    }
+
+    private function validInputLength()
+    {
+        if (empty($this->user['password']) || empty($this->user['username'])) {
+            throw new Exception('Missing required Input');
+        } elseif (strlen($this->user['password']) > 20 || strlen($this->user['username'])  > 20) {
+            throw new Exception('Too long of an Input');
+        }
+        return true;
     }
 }
 
 //TODO DB users email column hinzufügen
-//TODO DB auto-increment id Scooters
 //TODO DB Foreign Key 'currenOwner'
 

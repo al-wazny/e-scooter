@@ -30,6 +30,7 @@
         <table>
              
         </table>
+
         <table>
 <script>let slideIndex = 1;
 showSlides(slideIndex);
@@ -67,8 +68,6 @@ function showSlides(n) {
 }
 </script>
 <div class="slideshow-container">
-    <!-------------------------------------js------------------>
-
  
   <div class="mySlides fade">
     
@@ -146,3 +145,5 @@ function showSlides(n) {
             </div>
       </body>
 </html>
+
+
