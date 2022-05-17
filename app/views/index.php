@@ -4,7 +4,8 @@
     <head>
         <link rel="stylesheet" href="assets/css/styles.css" />
         <link rel="stylesheet" href="assets/css/scooters.css" />
-    </head>
+        <title>Automic Scooter</title>
+     </head>
     <body>
          
            <bgcolor="#131b23"></bgcolor>
