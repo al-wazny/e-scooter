@@ -9,7 +9,12 @@ class startPageLoader
         $this->db = new Database();
     }
 
-    public function getScooters()
+    public function load() 
+    {
+        return $this->getScooters();
+    }
+
+    private function getScooters()
     {
         $query = "SELECT * FROM Scooters";
         $this->db->query($query);

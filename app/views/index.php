@@ -21,7 +21,7 @@
                 <tr>
                     <?php foreach($data as $scooter): ?>
                         <td>
-                            <a href="pages/scooter">   <!-- enabled after configuring the routing -->
+                            <a href="pages/scooter?id=<?= $scooter['id'] ?>">
                                 <div class="singlescooter product1">
                                     <div class="singlescooterhead 1">
                                         <h3 style="color: black;"><?= $scooter['title']; ?></h3><br>

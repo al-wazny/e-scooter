@@ -13,14 +13,23 @@ class Pages extends Controller {
 
     public function index()
     {
-
-        $data = $this->startPage->getScooters();
+        $data = $this->startPage->load();
         
         $this->view('index', $data);
     }
 
     public function scooter() 
     {
-        $this->view('pages/scooter');;
+        $this->view('pages/scooter');
+    }
+
+    public function login()
+    {
+        $this->view('pages/login');
+    }
+
+    public function registrate()
+    {
+        $this->view('pages/registrate');
     }
 }

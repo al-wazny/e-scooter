@@ -6,21 +6,7 @@
     </head>
     <body>
         <header>
-            <a class="CompanyLogo" href="header\header.html"> 
-                <img class="CompanyLogo" src="../assets/Images/CompanyLogo.png" alt="Company Logo">
-            </a>
-            <a class="login" href=" " target="_top">Registrieren</a>
-            
-            <div class="bar">
-                <div class="Categoriesbar">
-                    <h3 class="Categories">Categories</h3>
-                </div>
-                <div class="searchbar">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Search f&uuml;r Scooter.." name="search" size="115">
-                    </form>
-                </div>       
-            </div>
+            <?php include('app/views/pagelets/header.php'); ?>
         </header>
         <table border="1">
             <tr>

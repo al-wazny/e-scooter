@@ -2,7 +2,7 @@
 <a class="CompanyLogo" href="pages/index"> 
     <img class="CompanyLogo" src="assets/Images/CompanyLogo.png" alt="Company Logo">
 </a>
-<a class="login" href=" " target="_top">Anmelden</a>
+<a class="login" href="pages/login" target="_top">Anmelden</a>
 
 <div class="bar">
     <div class="Categoriesbar">
