@@ -14,7 +14,7 @@ class Pages extends Controller {
     public function index()
     {
 
-        $data = $this->startPage->getScooters();
+        //$data = $this->startPage->getScooters();
         
         $this->view('index', $data);
     }
