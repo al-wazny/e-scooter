@@ -14,20 +14,17 @@ class authenticationModel
     {
         $username = trim($data["username"]);
 
-        if (!$this->db->Exist('username', 'accounts', 'username', $username))
+        if (!$this->db->Exist('username', 'users', 'username', $data["username"]))
         {
             $password = password_hash($data['password'], PASSWORD_DEFAULT);
             $uuid = uniqid($username);
 
-            $query = "INSERT INTO accounts (is_Admin, username, password, uuid)
-                      VALUES ('0', '$username', '$password', '$uuid')";
+            $query = "INSERT INTO users (username, password, uuid, street_housenumber, city, zip_code, birthday, firstname, lastname, email)
+                      VALUES ('".$username."', '".$password."', '".$uuid."', '".$data['adress']."', '".$data['city']."', '".$data['ZIP']."', '".$data['birthday']."', '".$data['firstname']."', '".$data['lastname']."', '".$data['email']."')";
 
-            $this->db->insert($query);
-
-            return true;
+            return $this->db->insert($query);
         }
-
-        return false;
+        throw new Exception('Username aready in use');
     }
 
     public function repeatPassword($password, $passwordRepeat)
@@ -87,7 +84,7 @@ class authenticationModel
         $author = $user->is_Admin;
 
         $author = boolval($author);
-        echo 'blub';
+
         return $author;
     }
 }
