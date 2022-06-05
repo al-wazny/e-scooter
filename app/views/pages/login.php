@@ -21,10 +21,10 @@
                     <i class="fas fa-lock"></i>
                 </label>
                 <input type="password" name="password" placeholder="Password" id="password" required pattern="[A-Za-z0-9]{1,20}">
-                <p style="color: red;"><?= $data['error']; ?></p>
+                <p style="color: red;"><?= $err; ?></p>
                 <input type="submit" name="Login" value="Login">
             </form>
-            <form class="registration-form" action="../../../index.php/Authentication/registrate">
+            <form class="registration-form" action="registrate">
                 <input type="submit" value="registration">
             </form>
         </div>
