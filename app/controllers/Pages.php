@@ -15,6 +15,7 @@ class Pages extends Controller {
 
     public function index()
     {
+
         $data = $this->startPage->load();
         
         $this->view('index', $data);
@@ -22,6 +23,7 @@ class Pages extends Controller {
 
     public function scooter($data) 
     {
+        
         $data = $this->productPage->getScooter($data['id']);
         $this->view('pages/scooter', $data);
     }

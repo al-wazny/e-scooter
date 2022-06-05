@@ -73,12 +73,10 @@ class Authentication extends Controller
         if (preg_match('/^[A-Za-z0-9]+$/', $this->user['username']) && $this->validInputLength()) {
             if ($this->user['password'] === $this->user['passwordRepeat']) {
                 return true;
-            } else {
-                throw new Exception('Passwords are not Identical');
             }
-        } else {
-            throw new Exception('Username does not match the required pattern');
+            throw new Exception('Passwords are not Identical');
         }
+        throw new Exception('Username does not match the required pattern');
     }
 
     private function validInputLength()
@@ -91,7 +89,3 @@ class Authentication extends Controller
         return true;
     }
 }
-
-//TODO DB users email column hinzufügen
-//TODO DB Foreign Key 'currenOwner'
-

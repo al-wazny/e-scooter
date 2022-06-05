@@ -1,10 +1,8 @@
 .scooter {
     border-radius: 5px;
-    position: relative;
-    margin-left: 20px;
-    padding-right: 20cm;
-    display: inline-block;
-    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row; 
+     background: rgb(255, 255, 255);
   }
   .scooter .scootername{
       color: aqua;
@@ -13,12 +11,8 @@
      margin-left: 20px;
  }
   .information {
-    display: inline-block;
-    background: rgb(255, 255, 255);
-    border-radius: 5px;
-    padding-right: 20px;
-    margin-left: 30px;
-    vertical-align:top
+    display: flex;
+    flex-direction: row; 
 }
 .information p{
     
