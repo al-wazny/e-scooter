@@ -61,21 +61,21 @@ class authenticationModel
         return (password_verify($password, $user->password));
     }
 
-    public function isAuthor($task)
-    {
-        $isAdmin = $this->isAdmin();
+    // public function isAuthor($task)
+    // {
+    //     $isAdmin = $this->isAdmin();
 
-        foreach ($task as &$todo)
-        {
-            if ($todo['user_id'] === $_SESSION['user'] || $isAdmin)
-            {
-                $todo['author'] = true;
-            } else {
-                $todo['author'] = false;
-            }
-        }
-        return $task;
-    }
+    //     foreach ($task as &$todo)
+    //     {
+    //         if ($todo['user_id'] === $_SESSION['user'] || $isAdmin)
+    //         {
+    //             $todo['author'] = true;
+    //         } else {
+    //             $todo['author'] = false;
+    //         }
+    //     }
+    //     return $task;
+    // }
 
     public function isAdmin()
     {
