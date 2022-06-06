@@ -1,4 +1,5 @@
 <?php
+include('../app/lib/Database.php');
 
 class startPageLoader
 {

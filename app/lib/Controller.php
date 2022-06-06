@@ -1,4 +1,5 @@
 <?php
+require_once('../app/config/config.php');
 
 class Controller {
     // load model
@@ -12,7 +13,7 @@ class Controller {
     public function model($model)
     {
         // Require model file
-        require_once APP_ROOT. '/models/' .$model . '.php';
+        require_once APP_ROOT. '/app/models/' .$model . '.php';
 
         // Instantiate model
         return new $model();

@@ -1,11 +1,11 @@
 <?php
-define('SERVERNAME', 'localhost');
+define('SERVERNAME', '127.0.0.1');
 define('USERNAME', 'root');
 define('PASSWORD', '');
 define('DB_NAME', 'escooter');
 define('DB_CHAR', 'uft8mb4');
 
-define('APP_ROOT', dirname(dirname(__FILE__)));
+define('APP_ROOT', dirname(dirname(dirname(__FILE__))));
 
 $root_url = (!empty($_SERVER['HTTPS']) ? "https" : "http") . '://' . $_SERVER['HTTP_HOST'] . '.com/';
 define('URL_ROOT', $root_url);

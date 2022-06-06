@@ -1,5 +1,7 @@
 <?php
 
+require_once('../app/lib/Database.php');
+
 class authenticationModel
 {
     private $db;
