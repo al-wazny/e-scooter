@@ -7,7 +7,7 @@
         <title>Automic Scooter</title>
      </head>
     <body>
-         
+        <!-- === display username if user is logged in ===  -->
             <a><img class="CompanyLogo" src="assets/Images/CompanyLogo.png" alt="Company Logo"></a>
             <a class="login" href="pages/login" target="_top">Anmelden</a>
            

@@ -8,11 +8,11 @@
 </head>
 <body>
     <div>
-        <p><a class="redirect" href="../../index.php">Zurueck zur Startseite</a></p>
+        <p><a class="redirect" href="../../">Zurueck zur Startseite</a></p>
 
         <div class="login">
             <h1>Login</h1>
-            <form action="../../../index.php/Authentication/loginHandler" method="get">
+            <form action="../../../Authentication/loginHandler" method="post">
                 <label for="username">
                     <i class="fas fa-user"></i>
                 </label>
@@ -21,7 +21,7 @@
                     <i class="fas fa-lock"></i>
                 </label>
                 <input type="password" name="password" placeholder="Password" id="password" required pattern="[A-Za-z0-9]{1,20}">
-                <p style="color: red;"><?= $err; ?></p>
+                <p style="color: red;"><?= $data ? $data['error'] : '' ?></p>
                 <input type="submit" name="Login" value="Login">
             </form>
             <form class="registration-form" action="registrate">

@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 class authenticationModel
 {
@@ -47,7 +46,7 @@ class authenticationModel
 
     public function getUserInfo($username)
     {
-        $query  = "SELECT * FROM accounts WHERE username = '".$username."'";
+        $query  = "SELECT * FROM users WHERE username = '".$username."'";
 
         $this->db->query($query);
 
@@ -58,7 +57,13 @@ class authenticationModel
     {
         $user = $this->getUserInfo($username);
 
-        return (password_verify($password, $user->password));
+        // DB return an object if only a single record is selected
+        // if $user isn't an object then it's null 
+        if (!is_object($user)) {
+            throw new Exception("Wrong username or password");
+        }
+
+        return password_verify($password, $user->password);
     }
 
     // public function isAuthor($task)

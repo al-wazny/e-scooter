@@ -10,23 +10,19 @@ class Authentication extends Controller
     public function __construct()
     {
         $this->authModel = $this->model('authenticationModel');
-        $_SESSION['registrationError'] = '';
     }
 
-    public function loginHandler($info)
+    public function loginHandler($userData)
     {
-        $username = trim($info['username']);
-        $password = trim($info['password']);
+        $this->user = $userData;
+        $this->filterDataFromWhitespaces();
 
-        if ($this->authModel->validatePassword($username, $password))
-        {
+        try {
+            $this->authModel->validatePassword($this->user['username'], $this->user['password']);
             $this->loginUser();
-
-            header("location: ../../index.php/pages/index");
-        } else {
-            $data['error'] = "Wrong Username or Password";
-
-            $this->view("pages/login", $data);
+        } catch (Exception $e) {
+            $data['error'] = $e->getMessage();
+            $this->view('pages/login', $data);
         }
     }
 
@@ -56,8 +52,8 @@ class Authentication extends Controller
             $this->authModel->createUser($this->user);
             $this->loginUser();
         } catch (Exception $e) {
-            $_SESSION['registrationError'] = $e->getMessage();
-            header('location: ../../pages/registrate');
+            $data['error'] = $e->getMessage();
+            $this->view('pages/registrate', $data);
         }
     }
 
