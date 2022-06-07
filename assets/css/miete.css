@@ -1,0 +1,41 @@
+.miete{
+    background-color: white;
+    border-radius: 24px;
+    width: 800;
+    height: 400;
+    margin-top: 2cm;
+   margin-left: 15cm;
+   display:   inline-block;
+   visibility:  visible;
+}
+.name{
+    margin-top: 10px;
+}
+ .inputs{
+     margin-left: 4cm;
+      display: inline-block;
+     visibility:  visible;
+  }
+  .name{
+margin-bottom: 25px;
+  }
+  .adress{
+      margin-bottom: 25px;
+  }
+  input{
+      margin-left: 10px;
+      border-radius: 25px;
+      height: 30;
+      width: 200;
+  }
+  button{
+      margin-left: 1cm;
+      margin-top: 50px;
+      height: 48;
+      width: 500;
+      color: rgb(255, 255, 255);
+      background-color: rgb(36, 35, 35);
+      border: 2px solid transparent;
+      border-radius: 88px;
+      cursor: pointer;
+  }
