@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once('C:\xampp\htdocs\e-scooter\app\lib\Controller.php');
 
 class Authentication extends Controller
 {
@@ -10,23 +11,19 @@ class Authentication extends Controller
     public function __construct()
     {
         $this->authModel = $this->model('authenticationModel');
-        $_SESSION['registrationError'] = '';
     }
 
-    public function loginHandler($info)
+    public function loginHandler($userData)
     {
-        $username = trim($info['username']);
-        $password = trim($info['password']);
+        $this->user = $userData;
+        $this->filterDataFromWhitespaces();
 
-        if ($this->authModel->validatePassword($username, $password))
-        {
+        try {
+            $this->authModel->validatePassword($this->user['username'], $this->user['password']);
             $this->loginUser();
-
-            header("location: ../../index.php/pages/index");
-        } else {
-            $data['error'] = "Wrong Username or Password";
-
-            $this->view("pages/login", $data);
+        } catch (Exception $e) {
+            $data['error'] = $e->getMessage();
+            return $data;
         }
     }
 
@@ -34,8 +31,6 @@ class Authentication extends Controller
     {
         $_SESSION['uuid'] = '';
         $_SESSION['username'] = '';
-
-        $this->view('index');
     }
 
     protected function loginUser()
@@ -56,8 +51,8 @@ class Authentication extends Controller
             $this->authModel->createUser($this->user);
             $this->loginUser();
         } catch (Exception $e) {
-            $_SESSION['registrationError'] = $e->getMessage();
-            header('location: ../../pages/registrate');
+            $data['error'] = $e->getMessage();
+            $this->view('pages/registrate', $data);
         }
     }
 
@@ -73,12 +68,10 @@ class Authentication extends Controller
         if (preg_match('/^[A-Za-z0-9]+$/', $this->user['username']) && $this->validInputLength()) {
             if ($this->user['password'] === $this->user['passwordRepeat']) {
                 return true;
-            } else {
-                throw new Exception('Passwords are not Identical');
             }
-        } else {
-            throw new Exception('Username does not match the required pattern');
+            throw new Exception('Passwords are not Identical');
         }
+        throw new Exception('Username does not match the required pattern');
     }
 
     private function validInputLength()
@@ -92,6 +85,10 @@ class Authentication extends Controller
     }
 }
 
-//TODO DB users email column hinzufügen
-//TODO DB Foreign Key 'currenOwner'
+$auth = new Authentication();
 
+if (isset($_POST['Login'])) {
+    $auth->loginHandler($_POST);
+} elseif (isset($_POST['Registrate'])) {
+    $auth->registrationHandler($_POST);
+}

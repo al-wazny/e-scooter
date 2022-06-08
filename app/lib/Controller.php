@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once('C:\xampp\htdocs\e-scooter\app\config\config.php');
 
 class Controller {
     // load model
