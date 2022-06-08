@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('../app/lib/Controller.php');
+require_once('C:\xampp\htdocs\e-scooter\app\lib\Controller.php');
 
 class Authentication extends Controller
 {

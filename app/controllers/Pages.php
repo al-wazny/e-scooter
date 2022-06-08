@@ -1,5 +1,5 @@
 <?php
-require_once('../app/lib/Controller.php');
+require_once('C:\xampp\htdocs\e-scooter\app\lib\Controller.php');
 
 class Pages extends Controller {
 
