@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once('../app/lib/Controller.php');
 
 class Authentication extends Controller
 {
@@ -22,7 +23,7 @@ class Authentication extends Controller
             $this->loginUser();
         } catch (Exception $e) {
             $data['error'] = $e->getMessage();
-            $this->view('pages/login', $data);
+            return $data;
         }
     }
 
@@ -30,8 +31,6 @@ class Authentication extends Controller
     {
         $_SESSION['uuid'] = '';
         $_SESSION['username'] = '';
-
-        $this->view('index');
     }
 
     protected function loginUser()
@@ -84,4 +83,12 @@ class Authentication extends Controller
         }
         return true;
     }
+}
+
+$auth = new Authentication();
+
+if (isset($_POST['Login'])) {
+    $auth->loginHandler($_POST);
+} elseif (isset($_POST['Registrate'])) {
+    $auth->registrationHandler($_POST);
 }

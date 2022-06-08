@@ -1,5 +1,5 @@
 <?php
-
+require_once('C:\xampp\htdocs\e-scooter\app\lib\Database.php');
 class startPageLoader
 {
     private $db;
@@ -20,5 +20,13 @@ class startPageLoader
         $this->db->query($query);
 
         return $this->db->resultSet();
+    }
+
+    public function getScooter($id)
+    {
+        $sql = "SELECT * FROM Scooters WHERE id=$id";
+    
+        $this->db->query($sql);
+        return $this->db->single();
     }
 }

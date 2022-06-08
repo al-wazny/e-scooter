@@ -1,4 +1,5 @@
 <?php
+require_once('C:\xampp\htdocs\e-scooter\app\lib\Database.php');
 
 class authenticationModel
 {

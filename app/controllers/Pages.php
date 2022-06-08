@@ -1,40 +1,28 @@
 <?php
+require_once('../app/lib/Controller.php');
 
 class Pages extends Controller {
 
     private $startPage;
-    private $authModel;
-    private $productPage;
 
     public function __construct()
     {
-        $this->authModel = $this->model('authenticationModel');
         $this->startPage = $this->model('startPageLoader');
-        $this->productPage = $this->model('productPageLoader');
     }
 
     public function index()
     {
-
-        $data = $this->startPage->load();
-        
-        $this->view('index', $data);
+        if (isset($_GET['id'])) {
+            return $this->scooter($_GET['id']);
+        }
+        return $this->startPage->load();   
     }
 
     public function scooter($data) 
     {
-        
-        $data = $this->productPage->getScooter($data['id']);
-        $this->view('pages/scooter', $data);
-    }
-
-    public function login()
-    {
-        $this->view('pages/login');
-    }
-
-    public function registrate()
-    {
-        $this->view('pages/registrate');
+        return $this->startPage->getScooter($data['id']);
     }
 }
+
+$page = new Pages();
+$data = $page->index();

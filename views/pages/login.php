@@ -1,9 +1,12 @@
+<?php 
+include('C:\xampp\htdocs\e-scooter\app\controllers\Authentication.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../../assets/css/login.css">
     <script src="https://kit.fontawesome.com/53a65f1db8.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -24,7 +27,7 @@
                 <p style="color: red;"><?= $data ? $data['error'] : '' ?></p>
                 <input type="submit" name="Login" value="Login">
             </form>
-            <form class="registration-form" action="registrate">
+            <form class="registration-form" action="registrate.php">
                 <input type="submit" value="registration">
             </form>
         </div>

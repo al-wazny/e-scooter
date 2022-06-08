@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
     <?php session_start() ?>
 </head>
 <body>
@@ -9,7 +9,7 @@
 
 
     <a class="CompanyLogo" href="pages/index"> 
-        <img class="CompanyLogo" src="../assets/Images/AtomLogo.png" alt="Company Logo">
+        <img class="CompanyLogo" src="../../assets/Images/AtomLogo.png" alt="Company Logo">
     </a>
     <a class="login" href="pages/registrate.php " target="_top">Registrate</a>
     
@@ -17,7 +17,7 @@
         <div class="Categoriesbar">
             <h3 class="Categories">Categories</h3>
         </div>
-    <img class="CompanyLogo" src="../assets/Images/CompanyLogo.png" alt="Company Logo">
+    <img class="CompanyLogo" src="../../assets/Images/CompanyLogo.png" alt="Company Logo">
 
     <a class="login" href="login" target="_top">Login</a>
 

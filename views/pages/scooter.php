@@ -1,14 +1,15 @@
-<html>
-<?php //var_dump($data) ?>
 
+<?php 
+include('../../app/controllers/Pages.php'); ?>
+<html>
     <head>
-        <link rel="stylesheet" href="../assets/css/styles.css">
-        <link rel="stylesheet" href="../assets/css/scooters.css">
-        <link rel="stylesheet" href="../assets/css/scooter1.css">
+        <link rel="stylesheet" href="../../assets/css/styles.css">
+        <link rel="stylesheet" href="../../assets/css/scooters.css">
+        <link rel="stylesheet" href="../../assets/css/scooter1.css">
     </head>
     <body>
         <header>
-            <?php include('app/views/pagelets/header.php'); ?>
+            <?php include('../pagelets/header.php'); ?>
         </header>
         <table border="1">
             <tr>

@@ -1,15 +1,17 @@
-<?php //phpinfo(); ?>
+<?php 
+include('../app/controllers/Pages.php');
+//phpinfo(); ?>
 
 <html>
     <head>
-        <link rel="stylesheet" href="assets/css/styles.css" />
-        <link rel="stylesheet" href="assets/css/scooters.css" />
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+        <link rel="stylesheet" href="../assets/css/scooters.css" />
         <title>Automic Scooter</title>
      </head>
     <body>
         <!-- === display username if user is logged in ===  -->
-            <a><img class="CompanyLogo" src="assets/Images/CompanyLogo.png" alt="Company Logo"></a>
-            <a class="login" href="pages/login" target="_top">Anmelden</a>
+            <a><img class="CompanyLogo" src="../assets/Images/CompanyLogo.png" alt="Company Logo"></a>
+            <a class="login" href="pages/login.php" target="_top">Anmelden</a>
            
             <div class="bar">
                 <div class="Categoriesbar">
@@ -70,25 +72,25 @@ function showSlides(n) {
  
   <div class="mySlides fade">
     
-    <img src="assets/Images/img1.jpg" style="width:100%;height:100%">
+    <img src="../assets/Images/img1.jpg" style="width:100%;height:100%">
     
   </div>
 
   <div class="mySlides fade">
     
-    <img src="assets/Images/img2.jpg" style="width:100%;height:100%">
+    <img src="../assets/Images/img2.jpg" style="width:100%;height:100%">
     
   </div>
 
   <div class="mySlides fade">
     
-    <img src="assets/Images/img3.jpg" style="width:100%;height:100%">
+    <img src="../assets/Images/img3.jpg" style="width:100%;height:100%">
   
   </div>
     
   <div class="mySlides fade">
 
-    <img src="assets/Images/img4.jpg" style="width:100%;height:100%">
+    <img src="../assets/Images/img4.jpg" style="width:100%;height:100%">
     
   </div>
 
@@ -113,7 +115,7 @@ function showSlides(n) {
                         <?php foreach($data as $scooter): ?>
                             <td>
                                 <div class="singlescooter product-3">
-                                    <a href="pages/scooter?id=<?= $scooter['id'] ?>">
+                                    <a href="pages/scooter.php?id=<?= $scooter['id'] ?>">
                                             <img width="300" height="300" src="https://res.cloudinary.com/grover/image/upload/e_trim/f_webp,q_auto/b_white,c_pad,h_300,w_300/v1650546624/c2ujbogyzmfgtlxpovzi.png" alt="Segway Ninebot F40D E-Scooter">    
                                             
                                             <h3 style="color: black; padding-right:50px ;"><?= $scooter['title'] ?></h3>

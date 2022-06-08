@@ -1,12 +1,12 @@
-<?php session_start() ?>
+<?php session_start();
+include('C:\xampp\htdocs\e-scooter\app\controllers\Authentication.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/53a65f1db8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assets/css/login.css">
     <link rel="stylesheet" href="../../assets/css/login.css">
-    <link rel="stylesheet" href="../../../assets/css/login.css">
     <title>Title</title>
 </head>
 <body>
@@ -56,7 +56,7 @@
         <input type="email" name="email" placeholder="email" required>
         
         <p style="color: red;"><?= $_SESSION['registrationError'] // use session instead to rewrite url ?></p> 
-        <input type="submit" name="Login" value="Registration">
+        <input type="submit" name="Registrate" value="Registration">
     </form>
 </div>
 </body>

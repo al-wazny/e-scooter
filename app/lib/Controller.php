@@ -1,4 +1,5 @@
 <?php
+require_once('C:\xampp\htdocs\e-scooter\app\config\config.php');
 
 class Controller {
     // load model
