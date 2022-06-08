@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
     <script src="https://kit.fontawesome.com/53a65f1db8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div>
-        <p><a class="redirect" href="../">Zurueck zur Startseite</a></p>
+        <p><a class="redirect" href="../../">Zurueck zur Startseite</a></p>
 
         <div class="login">
             <h1>Login</h1>
@@ -24,7 +24,7 @@
                 <p style="color: red;"><?= $data ? $data['error'] : '' ?></p>
                 <input type="submit" name="Login" value="Login">
             </form>
-            <form class="registration-form" action="registrate.php">
+            <form class="registration-form" action="registrate">
                 <input type="submit" value="registration">
             </form>
         </div>

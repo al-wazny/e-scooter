@@ -1,24 +1,29 @@
 <?php
 
-require_once('../app/lib/Controller.php');
-
 class Pages extends Controller {
 
     private $startPage;
+    private $authModel;
     private $productPage;
 
     public function __construct()
     {
+        $this->authModel = $this->model('authenticationModel');
         $this->startPage = $this->model('startPageLoader');
+        $this->productPage = $this->model('productPageLoader');
     }
 
     public function index()
     {
-        return $this->startPage->load();
+
+        $data = $this->startPage->load();
+        
+        $this->view('index', $data);
     }
 
     public function scooter($data) 
     {
+        
         $data = $this->productPage->getScooter($data['id']);
         $this->view('pages/scooter', $data);
     }
@@ -33,6 +38,3 @@ class Pages extends Controller {
         $this->view('pages/registrate');
     }
 }
-
-$page = new Pages();
-$data = $page->index();

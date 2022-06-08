@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/53a65f1db8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/login.css">
     <link rel="stylesheet" href="../../assets/css/login.css">
+    <link rel="stylesheet" href="../../../assets/css/login.css">
     <title>Title</title>
 </head>
 <body>
-<a class="redirect" href="../">Zurueck zur Startseite</a>
+<a class="redirect" href="../..">Zurueck zur Startseite</a>
 <div class="login">
     <h1>Registration</h1>
     <form action="Authentication/registrationHandler" method="get">
@@ -53,7 +55,7 @@
         </label>
         <input type="email" name="email" placeholder="email" required>
         
-        <p style="color: red;"><?= $data ? $data['error'] : '' ?></p> 
+        <p style="color: red;"><?= $_SESSION['registrationError'] // use session instead to rewrite url ?></p> 
         <input type="submit" name="Login" value="Registration">
     </form>
 </div>
