@@ -32,10 +32,8 @@ class authenticationModel
         return ($password === $passwordRepeat);
     }
 
-    public function login($username)
+    public function login($user)
     {
-        $user = $this->getUserInfo($username);
-
         $_SESSION['user'] = $user->uuid;
         $_SESSION['username'] = $user->username;
     }
@@ -47,6 +45,7 @@ class authenticationModel
 
     public function getUserInfo($username)
     {
+        (string) $username;
         $query  = "SELECT * FROM users WHERE username = '".$username."'";
 
         $this->db->query($query);
@@ -63,7 +62,7 @@ class authenticationModel
         if (!is_object($user)) {
             throw new Exception("Wrong username or password");
         }
-
+        $this->login($user);
         return password_verify($password, $user->password);
     }
 

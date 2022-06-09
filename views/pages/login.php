@@ -15,7 +15,7 @@ include('C:\xampp\htdocs\e-scooter\app\controllers\Authentication.php');
 
         <div class="login">
             <h1>Login</h1>
-            <form action="../../../Authentication/loginHandler" method="post">
+            <form action="" method="post">
                 <label for="username">
                     <i class="fas fa-user"></i>
                 </label>
@@ -24,7 +24,7 @@ include('C:\xampp\htdocs\e-scooter\app\controllers\Authentication.php');
                     <i class="fas fa-lock"></i>
                 </label>
                 <input type="password" name="password" placeholder="Password" id="password" required pattern="[A-Za-z0-9]{1,20}">
-                <p style="color: red;"><?= $data ? $data['error'] : '' ?></p>
+                <p style="color: red;"><?=  array_key_exists('error', $_SESSION) ? $_SESSION['error'] : '';  ?></p>
                 <input type="submit" name="Login" value="Login">
             </form>
             <form class="registration-form" action="registrate.php">
@@ -34,3 +34,4 @@ include('C:\xampp\htdocs\e-scooter\app\controllers\Authentication.php');
     </div>
 </body>
 </html>
+<?php $_SESSION['error'] = '';?>

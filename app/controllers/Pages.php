@@ -18,9 +18,9 @@ class Pages extends Controller {
         return $this->startPage->load();   
     }
 
-    public function scooter($data) 
+    public function scooter($id) 
     {
-        return $this->startPage->getScooter($data['id']);
+        return $this->startPage->getScooter($id);
     }
 }
 

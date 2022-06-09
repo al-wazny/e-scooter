@@ -13,7 +13,7 @@ include('C:\xampp\htdocs\e-scooter\app\controllers\Authentication.php');
 <a class="redirect" href="../..">Zurueck zur Startseite</a>
 <div class="login">
     <h1>Registration</h1>
-    <form action="Authentication/registrationHandler" method="get">
+    <form action="" method="post">
         <label for="username">
             <i class="fas fa-user"></i>
         </label>
@@ -55,9 +55,10 @@ include('C:\xampp\htdocs\e-scooter\app\controllers\Authentication.php');
         </label>
         <input type="email" name="email" placeholder="email" required>
         
-        <p style="color: red;"><?= $_SESSION['registrationError'] // use session instead to rewrite url ?></p> 
+        <p style="color: red;"><?= array_key_exists('error', $_SESSION) ? $_SESSION['error'] : ''; ?></p> 
         <input type="submit" name="Registrate" value="Registration">
     </form>
 </div>
 </body>
 </html>
+<?php $_SESSION['error'] = '';?>

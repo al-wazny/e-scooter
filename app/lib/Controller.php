@@ -28,7 +28,7 @@ class Controller {
     {
         // check for view file
         if (file_exists(APP_ROOT. '/views/' . $view . '.php')) {
-            require_once APP_ROOT . '/views/' . $view . '.php'; // Require view file
+            require_once APP_ROOT . '../views/' . $view . '.php'; // Require view file
         } else {
             die('View does not exist'); // View does not exit, Thus, stop the application
         }
