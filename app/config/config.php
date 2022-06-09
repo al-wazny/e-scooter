@@ -12,5 +12,6 @@ define('URL_ROOT', $root_url);
 
 define('SITE_NAME', 'thiccMoms');
 
+
 //echo  URL_ROOT;
 //echo APP_ROOT;

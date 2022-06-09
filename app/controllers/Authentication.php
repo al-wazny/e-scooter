@@ -51,8 +51,7 @@ class Authentication extends Controller
             $this->authModel->createUser($this->user);
             $this->loginUser();
         } catch (Exception $e) {
-            $data['error'] = $e->getMessage();
-            $this->view('pages/registrate', $data);
+            $_SESSION['error'] = $e->getMessage();
         }
     }
 
