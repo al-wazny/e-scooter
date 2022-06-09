@@ -30,6 +30,7 @@ session_start();
             </div>       
         </div>
 
+        
 <script>let slideIndex = 1;
 showSlides(slideIndex);
 

@@ -93,3 +93,4 @@ class authenticationModel
         return $author;
     }
 }
+
