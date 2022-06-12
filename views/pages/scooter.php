@@ -31,7 +31,7 @@ include('../../app/controllers/Pages.php'); ?>
                 <b><?= $data->price?><b><br>
                 <b><?= $data->description?></b>
                 <div class="scooterbutton 1">
-                    <button type=" button">Jetzt Mieten</button>
+                  <a href="miete.php"><button type=" button">Jetzt Mieten</button></a>
                 </div>
             </div>
     </div>
