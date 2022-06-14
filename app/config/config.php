@@ -1,8 +1,8 @@
 <?php
 define('SERVERNAME', 'localhost');
-define('USERNAME', 'root');
-define('PASSWORD', '');
-define('DB_NAME', 'escooter');
+define('USERNAME', 'lalwazny');
+define('PASSWORD', 'password');
+define('DB_NAME', 'e-scooter');
 define('DB_CHAR', 'uft8mb4');
 
 define('APP_ROOT', dirname(dirname(__FILE__)));
