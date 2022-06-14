@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <!---//TODO-->
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/slideshow.css">
+        <link rel="stylesheet" href="assets/css/burger.css">
+        <title> Automic Scooters</title>
+    </head>
+    <body>
+        <div id="container">   
+            <header>
+                <a class="CompanyLogo" href="header\header.html"> 
+                   <img class="CompanyLogo" src="../../../assets/Images/AtomLogo.png" alt="Company Logo">
+                </a>
+                <a class="register" href=" " target="_top">Registrieren</a>
+                <a class="login" href=" " target="_top">Einloggen</a>
+
+                <div class="bar">
+                    <div class="Categoriesbar">
+                        <button>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </button>
+                    </div>
+                </div>
+            </header>
+               
+               <!--------------------------------------------------Slider js script----------------------------------------------> 
+               
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img class="sliderimg" src="assets/Images/img1.jpg" style="width:100%"; height="auto">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img class="sliderimg" src="assets/Images/img2.jpg" style="width:100%"; height="auto">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img class="sliderimg" src="assets/Images/img3.jpg" style="width:100%"; height="auto">
+                </div>
+
+                <div class="mySlides fade">
+                <img class="sliderimg" src="assets/Images/img4.jpg" style="width:100%"; height="auto">
+                  </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
+            
+                <!--------------------------------------------------Slider script----------------------------------------------> 
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+            </script>
+        </div>
+              <!--------------------------------------------------Slider---------------------------------------------->     
+        <div id="container2"> 
+            
+            <div class="beispielprodukte">
+                <div class="scooterproduct">
+                    <a href="../Scooter1/scooter1.html">
+                        <div class="singlescooter product1">
+                            <div class="singlescooterhead 1">
+                                <h3 style="color: black;">Segway Ninebot F30D E-Scooter</h3><br>
+                            </div>
+                            <div class="singlescooterinfo 1">
+                                Versicherung und Nummernschild inklusive,<br>
+                                40km Reichweite, 17.1kg, Bluetooth app
+                            </div>
+                            <div class="scooterbutton 1">
+                                <button type=" button">Jetzt Mieten</button>
+                            </div>
+                            <div class="singlescooterprice 1">
+                                <b style="color: rgb(0, 0, 0); font-style: italic; font-size: small; "> &nbsp;pro stunde &nbsp;<b style="color: red; font-style: italic; font-weight: 600; ">0,22 € </b></b>
+                            </div>
+                            <div class="scooterimg 1">
+                                <img   src="https://res.cloudinary.com/grover/image/upload/e_trim/f_webp,q_auto/b_white,c_pad,h_300,w_300/v1650546624/c2ujbogyzmfgtlxpovzi.png" alt="Segway Ninebot F40D E-Scooter">    
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                        
+                <a href="">
+                    <div class="singlescooter product1">
+                        <div class="singlescooterhead 1">
+                            <h3 style="color: black;">Segway Ninebot F30D E-Scooter</h3><br>
+                        </div>
+                        <div class="singlescooterinfo 1">
+                            Versicherung und Nummernschild inklusive,<br>
+                            40km Reichweite, 17.1kg, Bluetooth app
+                        </div>
+                        <div class="scooterbutton 1">
+                            <button type=" button">Jetzt Mieten</button>
+                        </div>
+                        <div class="singlescooterprice 1">
+                            <b style="color: rgb(0, 0, 0); font-style: italic; font-size: small; "> &nbsp;pro stunde &nbsp;<b style="color: red; font-style: italic; font-weight: 600; ">0,22 € </b></b>
+                        </div>
+                        <div class="scooterimg 1">
+                            <img   src="https://res.cloudinary.com/grover/image/upload/e_trim/f_webp,q_auto/b_white,c_pad,h_300,w_300/v1650546624/c2ujbogyzmfgtlxpovzi.png" alt="Segway Ninebot F40D E-Scooter">    
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="beispielprodukte">
+                <div class="scooterproduct">
+                    <a href="../Scooter1/scooter1.html">
+                        <div class="singlescooter product1">
+                            <div class="singlescooterhead 1">
+                                <h3 style="color: black;">Segway Ninebot F30D E-Scooter</h3><br>
+                            </div>
+                            <div class="singlescooterinfo 1">
+                                Versicherung und Nummernschild inklusive,<br>
+                                40km Reichweite, 17.1kg, Bluetooth app
+                            </div>
+                            <div class="scooterbutton 1">
+                                <button type=" button">Jetzt Mieten</button>
+                            </div>
+                            <div class="singlescooterprice 1">
+                                <b style="color: rgb(0, 0, 0); font-style: italic; font-size: small; "> &nbsp;pro stunde &nbsp;<b style="color: red; font-style: italic; font-weight: 600; ">0,22 € </b></b>
+                            </div>
+                            <div class="scooterimg 1">
+                                <img   src="https://res.cloudinary.com/grover/image/upload/e_trim/f_webp,q_auto/b_white,c_pad,h_300,w_300/v1650546624/c2ujbogyzmfgtlxpovzi.png" alt="Segway Ninebot F40D E-Scooter">    
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                        
+                <a href="">
+                    <div class="singlescooter product1">
+                        <div class="singlescooterhead 1">
+                            <h3 style="color: black;">Segway Ninebot F30D E-Scooter</h3><br>
+                        </div>
+                        <div class="singlescooterinfo 1">
+                            Versicherung und Nummernschild inklusive,<br>
+                            40km Reichweite, 17.1kg, Bluetooth app
+                        </div>
+                        <div class="scooterbutton 1">
+                            <button type=" button">Jetzt Mieten</button>
+                        </div>
+                        <div class="singlescooterprice 1">
+                            <b style="color: rgb(0, 0, 0); font-style: italic; font-size: small; "> &nbsp;pro stunde &nbsp;<b style="color: red; font-style: italic; font-weight: 600; ">0,22 € </b></b>
+                        </div>
+                        <div class="scooterimg 1">
+                            <img   src="https://res.cloudinary.com/grover/image/upload/e_trim/f_webp,q_auto/b_white,c_pad,h_300,w_300/v1650546624/c2ujbogyzmfgtlxpovzi.png" alt="Segway Ninebot F40D E-Scooter">    
+                        </div>
+                    </div>
+                </a>              
+            </div>
+        </div>
+    </body>
+</html>
+ 
