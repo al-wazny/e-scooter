@@ -5,10 +5,11 @@
         <link rel="stylesheet" href="../../assets/css/confirm.css">
     </head>
     <body>
-        <header>
-         
-        </header>
-        
+    <header>
+    <?php
+    include('../views/pagelets/header.php');
+    ?>
+ </header>
         <div class="confirm">
             <div class="thanksText">
             <center>
