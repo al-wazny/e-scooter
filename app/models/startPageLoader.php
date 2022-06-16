@@ -30,4 +30,3 @@ class startPageLoader
         return $this->db->single();
     }
 }
-

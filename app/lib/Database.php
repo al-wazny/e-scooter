@@ -107,4 +107,3 @@ class Database {
         $this->connection->close();
     }
 }
-
