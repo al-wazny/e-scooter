@@ -1,0 +1,19 @@
+.confirm{
+    background-color: white;
+    border-radius: 24px;
+    width: 40%;
+    margin-top: 2cm;
+    margin-left: 20cm;
+   }
+   .thanksinformation{
+    margin-left: 2pc;
+    font-family: math;
+   }
+   .information{
+    margin-left: 2pc;
+   }
+   .information table{
+    font-family: initial;
+    font-size: x-large;
+    font-weight: 200;
+   }
