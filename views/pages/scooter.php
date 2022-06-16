@@ -5,8 +5,7 @@ include('../../app/controllers/Pages.php'); ?>
 
 
 <head>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
-    <link rel="stylesheet" href="../../assets/css/scooter1.css">
+     <link rel="stylesheet" href="../../assets/css/scooter1.css?v=<?php echo time(); ?>">
 </head>
 <body>
 <header>
@@ -20,9 +19,15 @@ include('../../app/controllers/Pages.php'); ?>
             <img src="<?= "data:image/jpeg;base64,".base64_encode($data->images) ?>" alt="">
         </div>
             <div class="information">
-                <h4><?= $data->title ?></h4>
-                <b><?= $data->price?><b><br>
-                <b><?= $data->description?></b>
+                <div class="title">
+                    <h4><?= $data->title ?></h4>
+                </div>
+                <div class="description">
+                    <span><?= $data->description?></span>
+                </div>
+                <div class="price">
+                    <b><span><?= $data->price?></span> Pro Tag<b><br>
+                </div>
                 <div class="scooterbutton 1">
                   <a href="miete.php"><button type=" button">Jetzt Mieten</button></a>
                 </div>

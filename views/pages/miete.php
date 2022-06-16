@@ -3,7 +3,7 @@
 
     <head>
         <link rel="stylesheet" href="../../assets/css/styles.css">
-        <link rel="stylesheet" href="../../assets/css/miete.css">
+        <link rel="stylesheet" href="../../assets/css/miete.css?v=<?php echo time(); ?>">
     </head>
     <body>
         <header>
@@ -46,8 +46,8 @@
                             <td><input type="date" placeholder="Enddatum"></td>
                         </tr>
                         <tr>
-                            <td colspan="8">
-                                <button type="submit">Mieten</button>
+                            <td colspan="4">
+                                <button type="submit"><span>Mieten</span></button>
                             </td>
                         </tr>
                     </table>
