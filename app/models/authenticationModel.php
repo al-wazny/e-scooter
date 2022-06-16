@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once('C:\xampp\htdocs\e-scooter\app\lib\Database.php');
 
 class authenticationModel
 {
@@ -32,10 +32,8 @@ class authenticationModel
         return ($password === $passwordRepeat);
     }
 
-    public function login($username)
+    public function login($user)
     {
-        $user = $this->getUserInfo($username);
-
         $_SESSION['user'] = $user->uuid;
         $_SESSION['username'] = $user->username;
     }
@@ -47,7 +45,8 @@ class authenticationModel
 
     public function getUserInfo($username)
     {
-        $query  = "SELECT * FROM accounts WHERE username = '".$username."'";
+        (string) $username;
+        $query  = "SELECT * FROM users WHERE username = '".$username."'";
 
         $this->db->query($query);
 
@@ -58,24 +57,30 @@ class authenticationModel
     {
         $user = $this->getUserInfo($username);
 
-        return (password_verify($password, $user->password));
-    }
-
-    public function isAuthor($task)
-    {
-        $isAdmin = $this->isAdmin();
-
-        foreach ($task as &$todo)
-        {
-            if ($todo['user_id'] === $_SESSION['user'] || $isAdmin)
-            {
-                $todo['author'] = true;
-            } else {
-                $todo['author'] = false;
-            }
+        // DB return an object if only a single record is selected
+        // if $user isn't an object then it's null 
+        if (!is_object($user)) {
+            throw new Exception("Wrong username or password");
         }
-        return $task;
+        $this->login($user);
+        return password_verify($password, $user->password);
     }
+
+    // public function isAuthor($task)
+    // {
+    //     $isAdmin = $this->isAdmin();
+
+    //     foreach ($task as &$todo)
+    //     {
+    //         if ($todo['user_id'] === $_SESSION['user'] || $isAdmin)
+    //         {
+    //             $todo['author'] = true;
+    //         } else {
+    //             $todo['author'] = false;
+    //         }
+    //     }
+    //     return $task;
+    // }
 
     public function isAdmin()
     {

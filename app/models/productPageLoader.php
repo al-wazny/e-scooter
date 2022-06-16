@@ -14,7 +14,6 @@ class productPageLoader
         $sql = "SELECT * FROM Scooters WHERE id=$id";
     
         $this->db->query($sql);
-        $scooter = $this->db->single();
-        return $scooter;
+        return $this->db->single();
     }
 }
