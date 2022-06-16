@@ -3,9 +3,9 @@
 <html>
     <head>
         <!---//TODO-->
-        <link rel="stylesheet" href="../assets/css/index.css">
         <link rel="stylesheet" href="../assets/css/slideshow.css">
         <link rel="stylesheet" href="../assets/css/burger.css">
+        <link rel="stylesheet" href="../assets/css/styles.css">
         <title> Automic Scooters</title>
     </head>
     <body>

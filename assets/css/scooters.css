@@ -103,7 +103,6 @@
      }  
   
  .scooterbutton button{
-   
   float: left;
   display: block;
   text-align: left;
@@ -115,4 +114,8 @@
   border-radius: 88px;
   display: block;
   cursor: pointer;
+ }
+ .scooterbutton a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
  }
