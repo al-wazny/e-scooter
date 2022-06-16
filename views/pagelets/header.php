@@ -9,7 +9,7 @@
 <div id="container">   
             <header>
                 <a class="CompanyLogo" href="header\header.html"> 
-                   <img class="CompanyLogo" src="../assets/Images/AtomLogo.png" alt="Company Logo">
+                   <img class="CompanyLogo" src="../../assets/Images/AtomLogo.png" alt="Company Logo">
                 </a>
                 <a class="register" href=" " target="_top">Registrieren</a>
                 <a class="login" href=" " target="_top">Einloggen</a>
