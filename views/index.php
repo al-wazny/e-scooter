@@ -67,7 +67,7 @@
             
             <div class="beispielprodukte">
                 <?php foreach($data as $scooter): ?>
-                    <a href="">
+                    <a href="pages/scooter.php?id=<?= $scooter['id'] ?>">
                         <div class="singlescooter product1">
                             <div class="singlescooterhead 1">
                                 <h3 style="color: black;"><?= $scooter['title'] ?></h3><br>
