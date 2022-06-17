@@ -93,7 +93,8 @@ border-radius: 24px;
 .singlescooter{
 border: 2px solid #ddd;
 display: inline-block;
-padding: 5px;
+padding: 10px;
+min-height: 300px;
 border-radius: 10px;
 box-shadow: 0 0 6px #000;
 margin: 15px;
@@ -169,6 +170,7 @@ display: -webkit-box;
  float: left;
  display: block;
  text-align: left;
+ width: 50%;
 }
  
 .scooterbutton {
@@ -198,4 +200,9 @@ grid-template-columns: 1fr 1fr ;
 column-gap: 10px;
 row-gap: 10px;
 vertical-align: center;
+}
+.scooter-picture {
+  height: 250px;
+  margin-top: 40px;
+  margin-left: 35px;
 }
