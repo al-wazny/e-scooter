@@ -1,11 +1,16 @@
 <?php include('../app/controllers/Pages.php'); ?>
+<?php
+
+    include('../pagelets/header.php');
+
+    ?>
 
 <html>
     <head>
         <!---//TODO-->
         <link rel="stylesheet" href="../assets/css/index.css">
         <link rel="stylesheet" href="../assets/css/slideshow.css">
-        <link rel="stylesheet" href="../assets/css/burger.css">
+        <link rel="stylesheet" href="../assets/css/burger.css?v=<?php echo time(); ?>">
         <title> Automic Scooters</title>
     </head>
     <body>
@@ -164,16 +169,11 @@
 
 
 
-        </div>
-        <div class="footer">
+            <div class="footer">
          <a class="agb" href="../views/agb.php" target="_bottom">AGB</a>
-         <a class="impressum" href="../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
-         <a class="impressum" href="../views/impressum.php" target="_bottom">Impressum</a>
-        
-
-
-
-        </div>
+         <a class="datenschutzerklaerung" href="../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
+         <a class="impressum-footer" href="../views/impressum.php" target="_bottom">Impressum</a>
+         </div> 
     </body>
     <script src="../assets/JS/slideshow.js"></script>
 </html>
