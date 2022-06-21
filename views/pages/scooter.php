@@ -42,11 +42,11 @@ include('../../app/controllers/Pages.php'); ?>
             <b>RADGRÖSSE</b><br>
             <label for="RADGRÖSSE">10 Zoll</label><br><br>
             <b>MAXIMALE LEISTUNG</b><br>
-            <label for="MAXIMALE LEISTUNG">350 Watt</label><br><br>
+            <label for="MAXIMALE LEISTUNG"><?= $data->maxOutput ?> Watt</label><br><br>
             <b>GEWICHT</b><br>
-            <label for="GEWICHT"><?= $data->title ?></label><br><br>
+            <label for="GEWICHT"><?= $data->scooterWeight ?> kg</label><br><br>
             <b>MAX. GESCHWINDIGKEIT</b><br>
-            <label for="MAX. GESCHWINDIGKEIT"><?= $data->maxSpeed ?></label><br><br>
+            <label for="MAX. GESCHWINDIGKEIT"><?= $data->maxSpeed ?> km/h</label><br><br>
         </div>
     </div>
 </div>

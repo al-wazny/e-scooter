@@ -1,8 +1,7 @@
 <?php
+session_start();
 if($_SESSION['username'] == '') {
     header('location: views/pages/login.php');
+} else {
+    header('location: views/index.php');
 }
-// require_once 'app/boostrap.php';
-
-// new Core();
-header('location: views/index.php');

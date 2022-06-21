@@ -16,7 +16,7 @@ class startPageLoader
 
     private function getScooters()
     {
-        $query = "SELECT * FROM Scooters";
+        $query = "SELECT * FROM scooters";
         $this->db->query($query);
 
         return $this->db->resultSet();
@@ -24,9 +24,9 @@ class startPageLoader
 
     public function getScooter($id)
     {
-        $sql = "SELECT * FROM Scooters WHERE id=$id";
-    
+        $sql = "SELECT * FROM scooters WHERE id=$id";
         $this->db->query($sql);
+
         return $this->db->single();
     }
 }
