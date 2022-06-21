@@ -1,3 +1,5 @@
+<?php include('../../app/controllers/Authentication.php'); ?>
+
 <html>
     <head>
         <link rel="stylesheet" href="../../assets/css/styles.css">
