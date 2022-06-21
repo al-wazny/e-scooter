@@ -3,17 +3,17 @@
 <html>
     <head>
         <!---//TODO-->
-         <link rel="stylesheet" href="../../assets/css/scooters.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="../../assets/css/styles.css">
+        <link rel="stylesheet" href="../../assets/css/scooters.css">
     </head>
     <body>
     <header>
-    <?php
-    include('../pagelets/header.php');
-    ?>
- </header>
+        <?php include('../pagelets/header.php'); ?>
+    </header>
     <div class="scooter">
         <div class="neben">
-            <form action="/action_page.php">
+            <form>
+
                 <div class="sort_by">
                     <div class="choose">
                         <label>SORTIEREN NACH</label><br>
@@ -36,7 +36,7 @@
                     </div>
                     <input type="checkbox" id="Segway" name="Segway" value="Segway_Scooter">
                     <label for="Segway"> Segway</label><br>
-                    <input type="checkbox" id="Xiaomi" name="Xiaomi " value="Xiaomi_Scooter">
+                    <input type="checkbox" id="Xiaomi" name="Xiaomi" value="Xiaomi_Scooter">
                     <label for="Xiaomi ">Xiaomi</label><br>
                     <input type="checkbox" id="Grover" name="Grover" value="Grover_Scooter">
                     <label for="Grover">Grover</label><br><br>

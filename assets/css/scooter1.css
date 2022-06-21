@@ -21,6 +21,8 @@
 }
 .scootername img {
      border-radius: 20px;
+     width: 20em;
+    height: 20em;
     }
     .scooterinformation{
         background-color: white;

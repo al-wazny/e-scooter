@@ -1,3 +1,5 @@
+<?php include('../../app/controllers/Authentication.php'); ?>
+
 <html>
     <head>
         <link rel="stylesheet" href="../../assets/css/confirm.css?v=<?php echo time(); ?>">
@@ -29,14 +31,14 @@
                         <td colspan="3"><b>Date den Mieter</b></td>
                     </tr>
                     <tr>
-                        <td>Vorname:</td>
-                        <td>Nachname:</td>
-                        <td>Addresse:</td>
+                        <td>Vorname: <?= $user->firstname ?></td>
+                        <td>Nachname: <?= $user->lastname ?></td>
+                        <td>Addresse: <?= $user->street_housenumber ?></td>
                     </tr>
                     <tr>
-                        <td>Postleitzahl:</td>
-                        <td>Stadt:</td>
-                        <td>E-Mail:</td>
+                        <td>Postleitzahl: <?= $user->zip_code ?></td>
+                        <td>Stadt: <?= $user->city ?></td>
+                        <td>E-Mail: <?= $user->email ?></td>
                     </tr>
                     <tr>
                         <td colspan="3"><b>Produkt:</b></td>
