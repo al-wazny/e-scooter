@@ -13,7 +13,7 @@
  </header>
     <div class="scooter">
         <div class="neben">
-            <form action="/action_page.php">
+            <form>
                 <div class="sort_by">
                     <div class="choose">
                         <label>SORTIEREN NACH</label><br>
