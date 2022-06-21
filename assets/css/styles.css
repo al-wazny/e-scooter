@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #container{
   margin: 0 auto;
   width: 950px;
@@ -44,8 +43,6 @@ a.login:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
 }
 
-a.register {
-=======
 html {
   zoom: 90%;
 }
@@ -138,16 +135,13 @@ from {opacity: .4}
 to {opacity: 1}
 }
 a.login {
->>>>>>> 41f699ffe70da6a653481b456ae18aca71330265
   float: right;
   display: block;
   color: #e6e6e6;
   text-align: center;
-<<<<<<< HEAD
   width: 130px;
   background-color: rgb(34, 65, 236);
   padding: 15px ;
-  
   margin-top: 15px;
   text-decoration: none;
   font-size: 17px;
@@ -161,8 +155,6 @@ a.register:hover {
   background-color: azure;
   color: black;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
-  
-=======
   width: 120px;
   background-color: rgb(34, 65, 236);
   padding: 15px 30px;
@@ -172,15 +164,14 @@ a.register:hover {
   font-size: 17px;
   border-radius: 25px;
 }
+
 a.login:hover {
   background-color: azure;
   color: black;
->>>>>>> 41f699ffe70da6a653481b456ae18aca71330265
 }
 
 img.CompanyLogo {
   padding: 6px 25px;
-<<<<<<< HEAD
   margin-top: 15px;
   margin-left: 450px;
   height: 50px;
@@ -308,7 +299,6 @@ grid-template-columns: 1fr 1fr ;
 column-gap: 10px;
 row-gap: 10px;
 vertical-align: center;
-=======
   margin-top: 10px;
   margin-left: 20px;
   width: 50px;
@@ -389,5 +379,4 @@ vertical-align: center;
   padding-right: 30cm;
   padding-top: 0px;
   position: absolute;
->>>>>>> 41f699ffe70da6a653481b456ae18aca71330265
 }
