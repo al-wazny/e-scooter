@@ -1,13 +1,11 @@
 <?php include('../app/controllers/Pages.php'); ?>
 
-
 <html>
     <head>
         <!---//TODO-->
         <link rel="stylesheet" href="../assets/css/index.css">
         <link rel="stylesheet" href="../assets/css/slideshow.css">
-        <link rel="stylesheet" href="../assets/css/burger.css?v=<?php echo time(); ?>">
-        <title> Automic Scooters</title>
+         <title> Automic Scooters</title>
     </head>
     <body>
         <div id="container">   
@@ -28,9 +26,7 @@
                         </button>
                     </div>
                 </div>
-             
             </header>
-               
                <!--------------------------------------------------Slider js script----------------------------------------------> 
                
             <div class="slideshow-container">

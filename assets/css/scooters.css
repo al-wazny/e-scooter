@@ -15,7 +15,8 @@ margin: 15px;
 width:590;
 background-color: rgb(255, 255, 255);
 outline: none;
-
+padding: 10px;
+min-height: 300px;
 }
 .singlescooter:hover{
  border: 2px solid #ddd;
@@ -64,6 +65,7 @@ background: rgb(255, 255, 255);
 border-style: solid;
 padding: 0px 40px;
 border-color: rgb(241, 241, 241);
+row-gap: 3;
 }
 .singlescooterinfo{
  text-size-adjust: 100%;

@@ -13,6 +13,7 @@
     <div class="scooter">
         <div class="neben">
             <form>
+
                 <div class="sort_by">
                     <div class="choose">
                         <label>SORTIEREN NACH</label><br>
@@ -58,7 +59,6 @@
                                         <div class="singlescooterinfo 1">
                                             <?=$scooter['description']?>,<br>
                                             <?=$scooter['scooterWeight']?>kg 
-
                                         </div>
                                         <div class="scooterbutton 1">
                                         <a href="miete.php"><button type=" button"> Jetzt Mieten</button></a>
