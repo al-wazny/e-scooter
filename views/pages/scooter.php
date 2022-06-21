@@ -13,11 +13,12 @@ include('../../app/controllers/Pages.php'); ?>
     include('../pagelets/header.php');
     ?>
  </header>
-    <div class="scooter">
-        <div class="scootername">
-            <br>
-            <img src="<?= "data:image/jpeg;base64,".base64_encode($data->images) ?>" alt="">
-        </div>
+ <form action="">
+     <div class="scooter">
+         <div class="scootername">
+             <br>
+             <img src="<?= "data:image/jpeg;base64,".base64_encode($data->images) ?>" alt="">
+            </div>
             <div class="information">
                 <div class="title">
                     <h4><?= $data->title ?></h4>
@@ -25,14 +26,28 @@ include('../../app/controllers/Pages.php'); ?>
                 <div class="description">
                     <span><?= $data->description?></span>
                 </div>
+                <div calss="duration">
+                    <table>
+                        <tr>
+                            <td>Startdatum</td>
+                            <td><input type="date" placeholder="Startdatum"></td>
+                        </tr>
+                        <tr>
+                            <td>Enddatum</td>
+                            <td><input type="date" placeholder="Enddatum"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
                 <div class="price">
                     <b><span><?= $data->price?></span> Pro Tag<b><br>
-                </div>
-                <div class="scooterbutton 1">
-                  <a href="miete.php"><button type=" button">Jetzt Mieten</button></a>
+                    </div>
+                    <div class="scooterbutton 1">
+                        <button type="submit">Jetzt Mieten</button>
+                    </div>
                 </div>
             </div>
-    </div>
+        </form>
 <div class="scooterinformation">
     <div class="scooterInformnationText">
         <h2>Information</h2>
