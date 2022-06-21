@@ -6,6 +6,7 @@ include('../../app/controllers/Pages.php'); ?>
 
 <head>
      <link rel="stylesheet" href="../../assets/css/scooter1.css?v=<?php echo time(); ?>">
+     <link rel="stylesheet" href="../../assets/css/styles.css?v=<?php echo time(); ?>">
 </head>
 <body>
 <header>
@@ -37,7 +38,6 @@ include('../../app/controllers/Pages.php'); ?>
                             <td><input type="date" placeholder="Enddatum"></td>
                         </tr>
                     </table>
-                    
                 </div>
                 <div class="price">
                     <b><span><?= $data->price?></span> Pro Tag<b><br>

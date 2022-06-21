@@ -1,36 +1,21 @@
-<?php include('../app/controllers/Pages.php'); ?>
+<?php include('../../app/controllers/Pages.php'); ?>
 
 <html>
     <head>
         <!---//TODO-->
-        <link rel="stylesheet" href="../assets/css/index.css">
-        <link rel="stylesheet" href="../assets/css/burger.css">
-        <link rel="stylesheet" href="../assets/css/datenschutzerklaerung.css">
+        <link rel="stylesheet" href="../../assets/css/footer.css">
+        <link rel="stylesheet" href="../../assets/css/datenschutzerklaerung.css">
         <title>Datenschutzerklärung</title>
     </head>
     <body>
-        <div id="container">   
-            <header>
-            
-
-            <a class="CompanyLogo" href="../views/index.php">  
-                   <img class="CompanyLogo" src="../assets/Images/AtomLogo.png" alt="Company Logo">
-                </a>
-               <a class="register" href=" " target="_top" >Registrieren</a>
-                <a class="login" href=" " target="_top">Einloggen</a> 
-                <div class="bar">
-                    <div class="Categoriesbar">
-                        <button>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </button>
-                    </div>
-                </div>
-             
+        <header>
+            <?php
+             include('../pagelets/header.php');
+             ?>
             </header>
-
-
+            
+            
+        <div id="container">   
             <div class="datenschutz-text">
             <p class="text-titel">Datenschutzerklärung</p>
 
@@ -97,7 +82,7 @@ Datenschutzerklärung erstellt mit dem Trusted Shops Rechtstexter in Kooperation
          <a class="agb" href="../views/agb.php" target="_bottom">AGB</a>
          <a class="datenschutzerklaerung" href="../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
          <a class="impressum-footer" href="../views/impressum.php" target="_bottom">Impressum</a>
-         </div>  
+         </div>   
 
 </body>
 </html>

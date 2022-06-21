@@ -1,22 +1,12 @@
-body {
-    
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../Images/Atom.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #131b23;
-    
-    
-}
 
 a.login {
     float: right;
     display: block;
-    color: rgb(255, 255, 255);
+    color: #e6e6e6;
     text-align: center;
-    background-color: rgb(126, 126, 126);
+    background-color: #7e7e7e;
     margin-right: 20px;
-    margin-top: 15px;
+    margin-top: 87px;
     text-decoration: none;
     font-size: 17px;
     border-radius: 25px;
@@ -41,8 +31,7 @@ a.register {
     width: 130px;
     background-color: rgb(205, 75, 75);
     padding: 15px ;
-    
-    margin-top: 15px;
+    margin-top: 87px;
     text-decoration: none;
     font-size: 17px;
     border-radius: 50px;
@@ -61,7 +50,7 @@ a.register:hover {
 img.CompanyLogo {
     padding: 6px 25px;
     margin-top: 15px;
-    margin-left: 450px;
+    margin-left: 430px;
     height: 50px;
      width: auto;
 }
@@ -73,4 +62,4 @@ img.CompanyLogo {
     grid-template-columns: 50px 1fr ;
     width: 130;
     margin-bottom: 10px;
- }
+}

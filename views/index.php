@@ -1,46 +1,18 @@
 <?php include('../app/controllers/Pages.php'); ?>
-<?php
-
-    include('../pagelets/header.php');
-
-    ?>
 
 <html>
     <head>
         <!---//TODO-->
-         <link rel="stylesheet" href="../assets/css/styles.css?v=<?php echo time(); ?>">
+         <link rel="stylesheet" href="../assets/css/index.css?v=<?php echo time(); ?>">
         <link rel="stylesheet" href="../assets/css/slideshow.css">
-        <link rel="stylesheet" href="../assets/css/burger.css?v=<?php echo time(); ?>">
-        <title> Automic Scooters</title>
+         <title> Automic Scooters</title>
     </head>
     <body>
-
              <header>
              <?php
              include('pagelets/header.php');
              ?>
-
-        <div id="container">   
-            <header>
-            
-
-            <a class="CompanyLogo" href="../../views/index.php"> 
-                   <img class="CompanyLogo" src="../assets/Images/AtomLogo.png" alt="Company Logo">
-                </a>
-               <a class="register" href=" " target="_top" >Registrieren</a>
-                <a class="login" href=" " target="_top">Einloggen</a> 
-                <div class="bar">
-                    <div class="Categoriesbar">
-                        <button>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </button>
-                    </div>
-                </div>
-             
             </header>
-               
                <!--------------------------------------------------Slider js script----------------------------------------------> 
                
             <div class="slideshow-container">
@@ -153,16 +125,10 @@
                 <?php endforeach; ?>
             </div>
             
-
-
-
-
-
-
             <div class="footer">
-         <a class="agb" href="../views/agb.php" target="_bottom">AGB</a>
-         <a class="datenschutzerklaerung" href="../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
-         <a class="impressum-footer" href="../views/impressum.php" target="_bottom">Impressum</a>
+         <a class="agb" href="pages/agb.php" target="_bottom">AGB</a>
+         <a class="datenschutzerklaerung" href="pages/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
+         <a class="impressum-footer" href="pages/impressum.php" target="_bottom">Impressum</a>
          </div> 
     </body>
     <script src="../assets/JS/slideshow.js"></script>

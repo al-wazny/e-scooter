@@ -64,6 +64,7 @@ background: rgb(255, 255, 255);
 border-style: solid;
 padding: 0px 40px;
 border-color: rgb(241, 241, 241);
+row-gap: 3;
 }
 .singlescooterinfo{
  text-size-adjust: 100%;
