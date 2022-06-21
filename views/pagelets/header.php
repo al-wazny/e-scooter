@@ -12,7 +12,7 @@
         <div id="container">   
             
 
-            <a class="CompanyLogo" href="index.php"> 
+            <a class="CompanyLogo" href="../index.php"> 
                    <img class="CompanyLogo" src="../../assets/Images/AtomLogo.png" alt="Company Logo">
                 </a>
                <a class="register" href=" " target="_top" >Registrieren</a>

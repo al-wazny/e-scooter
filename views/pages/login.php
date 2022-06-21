@@ -1,5 +1,5 @@
 <?php 
-include('C:\xampp\htdocs\e-scooter\app\controllers\Authentication.php');
+include('../../app/controllers/Authentication.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
