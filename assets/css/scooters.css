@@ -103,19 +103,30 @@ border-color: rgb(241, 241, 241);
 }  
 
 .scooterbutton button{
+<<<<<<< HEAD
+=======
+
+>>>>>>> 41f699ffe70da6a653481b456ae18aca71330265
 float: left;
 display: block;
 text-align: left;
 padding: 0px 30px;
 height: 48;
 color: rgb(255, 255, 255);
+<<<<<<< HEAD
 background-color: rgb(205, 75, 75);
+=======
+background-color: rgb(254, 18, 18);
+>>>>>>> 41f699ffe70da6a653481b456ae18aca71330265
 border: 2px solid transparent;
 border-radius: 88px;
 display: block;
 cursor: pointer;
+<<<<<<< HEAD
 }
 .scooterbutton a{
 text-decoration: none;
 color: rgb(255, 255, 255);
+=======
+>>>>>>> 41f699ffe70da6a653481b456ae18aca71330265
 }

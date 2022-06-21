@@ -62,4 +62,3 @@ include('C:\xampp\htdocs\e-scooter\app\controllers\Authentication.php');
 </body>
 </html>
 <?php $_SESSION['error'] = '';?>
-
