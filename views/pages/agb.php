@@ -3,34 +3,19 @@
 <html>
     <head>
         <!---//TODO-->
-        <link rel="stylesheet" href="../assets/css/index.css">
-        <link rel="stylesheet" href="../assets/css/burger.css">
-        <link rel="stylesheet" href="../assets/css/agb.css">
+        <link rel="stylesheet" href="../../assets/css/index.css">
+        <link rel="stylesheet" href="../../assets/css/agb.css">
         <title>ABG</title>
     </head>
     <body>
-        <div id="container">   
-            <header>
-            
-
-            <a class="CompanyLogo" href="../views/index.php">  
-                   <img class="CompanyLogo" src="../assets/Images/AtomLogo.png" alt="Company Logo">
-                </a>
-               <a class="register" href=" " target="_top" >Registrieren</a>
-                <a class="login" href=" " target="_top">Einloggen</a> 
-                <div class="bar">
-                    <div class="Categoriesbar">
-                        <button>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </button>
-                    </div>
-                </div>
-             
+        <header>
+            <?php
+             include('../pagelets/header.php');
+             ?>
             </header>
-
-
+            
+            
+        <div id="container">   
             <div class="agb-text">
                 
 <p class="text-titel">Allgemeine Verkaufsbedingungen</p>
