@@ -1,4 +1,3 @@
-<?php include('../app/controllers/Pages.php'); ?>
 
 <html>
 <head>

@@ -1,9 +1,5 @@
 <?php include('../app/controllers/Pages.php'); ?>
-<?php
 
-    include('../pagelets/header.php');
-
-    ?>
 
 <html>
     <head>

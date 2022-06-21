@@ -82,6 +82,10 @@ class Authentication extends Controller
         }
         return true;
     }
+
+    public function getUser() {
+        return $this->authModel->getUserInfo($_SESSION['username']);
+    }
 }
 
 $auth = new Authentication();
@@ -90,4 +94,6 @@ if (isset($_POST['Login'])) {
     $auth->loginHandler($_POST);
 } elseif (isset($_POST['Registrate'])) {
     $auth->registrationHandler($_POST);
+} else {
+    $user = $auth->getUser();
 }
