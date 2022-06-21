@@ -1,4 +1,22 @@
+.Categoriesbar img {
+  width:30px;
+ background-color: white;
+  bottom:20px;
+  right:20px;
+  -webkit-filter: grayscale(100%)brightness(3); 
+  filter: grayscale(100%)brightness(3);
+}
 
+.Categoriesbar p {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 10px;
+  font-family: "Helvetica", sans-serif;
+  text-align: center;
+  margin-top: 70px;
+}
 
 .Categoriesbar img {
   width:30px;
@@ -20,8 +38,6 @@
   margin-top: 70px;
   
 }
-
-
 
 .Categoriesbar button {
   position:sticky;
@@ -48,7 +64,6 @@
   background:rgb(0, 0, 0);
   margin-top: 16px;
   margin-left: 2px;
-  
 }
 
 .Categoriesbar button:hover {
