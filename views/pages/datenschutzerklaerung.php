@@ -78,11 +78,7 @@ info@automic-scooters.de<br>
 Soweit wir zur Wahrung unserer im Rahmen einer Interessensabwägung überwiegenden berechtigten Interessen personenbezogene Daten wie oben erläutert verarbeiten, können Sie dieser Verarbeitung mit Wirkung für die Zukunft widersprechen. Erfolgt die Verarbeitung zu Zwecken des Direktmarketings, können Sie dieses  (...)
 Datenschutzerklärung erstellt mit dem Trusted Shops Rechtstexter in Kooperation mit Wilde Beuger Solmecke Rechtsanwälte.
 
-<div class="footer">
-         <a class="agb" href="../views/agb.php" target="_bottom">AGB</a>
-         <a class="datenschutzerklaerung" href="../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
-         <a class="impressum-footer" href="../views/impressum.php" target="_bottom">Impressum</a>
-         </div>   
+  
 
 </body>
 </html>

@@ -1,20 +1,18 @@
 
-.footer{
-
-    vertical-align: bottom;
-    height: 25%;
-    background-color:white}
-    
 
 
-    .impressum{
-         color: white;
-        text-align: center;
-    
-    }
+     .impressum{
+      display: block;
+      color: white;
+      text-align: center;
+      width: 950px;
+      margin: 0 auto;
+  
+  }
     .cards{
         display: flex;
         flex-direction: row;
+       
     }
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -23,8 +21,13 @@
         margin-left: 50px;
         text-align: center;
         font-family: arial;
-        background-color: rgba(255, 255, 255, 0.21)
+        background-color: rgba(255, 255, 255, 0.21);
+        border-radius: 10px;
+        border: #f2f2f2;
+        border-style: solid;
+        border-width: 5px;
       }
+      
       
       .title {
         color: rgb(224, 28, 28);

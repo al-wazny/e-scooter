@@ -1,22 +1,19 @@
 .scooterproduct{
   margin-left: 0px;
+ 
 }
-.scooterproduct table{
-border-radius: 24px;
- margin-left: 2cm;
-}
+
 .singlescooter{
-border: 2px solid #ddd;
-display: inline-block;
-padding: 5px;
-border-radius: 10px;
-box-shadow: 0 0 6px #000;
-margin: 15px;
-width:590;
-background-color: rgb(255, 255, 255);
-outline: none;
-padding: 10px;
-min-height: 300px;
+  border: 2px solid #ddd;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px #000;
+  margin: 15px;
+  position:  static;
+  width:590;
+  background-color: rgb(255, 255, 255);
+  outline: none;
 }
 .singlescooter:hover{
  border: 2px solid #ddd;
@@ -101,7 +98,7 @@ text-align: left;
 padding: 0px 30px;
 height: 48;
 color: rgb(255, 255, 255);
-background-color: rgb(205, 75, 75);
+background-color: blue;
 border: 2px solid transparent;
 border-radius: 88px;
 display: block;
@@ -122,3 +119,13 @@ color: rgb(255, 255, 255);
   margin-top: 68px;
   margin-bottom: 8px
 }
+
+.produkt-grid{
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 30px;
+  row-gap: 10px;
+  
+  
+  }
+  

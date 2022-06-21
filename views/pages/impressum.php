@@ -26,7 +26,7 @@
                
                 <div class="cards">
                         <div class="card">
-                                <img src="../../assets/Images/WhatsApp Image 2022-06-21 at 18.47.18.jpeg" alt="anwar" style="width:200px;height: 284px;margin-top:20px">
+                                <img src="../../assets/Images/WhatsApp Image 2022-06-21 at 18.47.18.jpeg" alt="anwar" style="width:auto;height: 284px;margin-top:20px; padding:20px">
                                 <h1>Anwar Chaban</h1>
                                 <p class="title">ERP System Developer</p>
                                 <div style="margin: 24px 0;">
@@ -37,7 +37,7 @@
                                 </div>
                          </div>
                          <div class="card">
-                                <img src="../../assets/Images/Miro.png" alt="miro" style="width:200px;height: 284px;margin-top:20px">
+                                <img src="../../assets/Images/Miro.png" alt="miro" style="width:auto;height: 284px;margin-top:20px; padding:20px; padding-left:15px;">
                                 <h1>Miroslav Dimitrov</h1>
                                 <p class="title">ERP System Developer</p>
                                 <div style="margin: 24px 0;">
@@ -48,7 +48,7 @@
                                 </div>
                          </div>
                          <div class="card">
-                                <img src="../../assets/Images/Ali.png" alt="ali" style="width:200px;height: 284px;margin-top:20px">
+                                <img src="../../assets/Images/Ali.png" alt="ali" style="width:auto;height: 284px;margin-top:20px; padding:20px">
                                 <h1>Ali  Al-Wazny</h1>
                                 <p class="title">ERP System Developer</p>
                                 <div style="margin: 24px 0;">
@@ -81,15 +81,5 @@
  
  </div>
 
- <div class="footer">
-         <a class="agb" href="../../views/agb.php" target="_bottom">AGB</a>
-         <a class="datenschutzerklaerung" href="../../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
-         <a class="impressum-footer" href="../../views/impressum.php" target="_bottom">Impressum</a>
-         </div>     
-
-
-
-        
- 
 </body>
 </html>

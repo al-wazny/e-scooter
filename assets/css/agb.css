@@ -1,5 +1,9 @@
 .agb-text{
+    display: block;
     color: white;
+    
+    width: 950px;
+    margin: 0 auto;
     }
     .text-titel{
     font-size: 20px;
@@ -10,11 +14,5 @@
     font-weight: 600;
     
     }
-    .footer{
-    
-        vertical-align: bottom;
-        width: 100%;
-        height: 15%;
-        background-color:white;
-        margin-left: none;
-    }
+ 
+   

@@ -8,11 +8,11 @@
          <title> Automic Scooters</title>
     </head>
     <body>
-             <header>
-             <?php
-             include('pagelets/header.php');
-             ?>
-            </header>
+    <header>
+    <?php
+    include('pagelets/indexheader.php');
+    ?>
+ </header>
                <!--------------------------------------------------Slider js script----------------------------------------------> 
                
             <div class="slideshow-container">
@@ -48,7 +48,7 @@
             
         </div>
               <!--------------------------------------------------Slider---------------------------------------------->     
-        <div id="container2"> 
+              <div id="container2"> 
             
             <div class="beispielprodukte">
                 <?php foreach($data as $scooter): ?>
@@ -62,7 +62,8 @@
                                 <h3 style="color: black;"><?= $scooter['title'] ?></h3><br>
                             </div>
                             <div class="singlescooterinfo 1">
-                            <?= $scooter['description'] ?>
+                                Versicherung und Nummernschild inklusive,<br>
+                                40km Reichweite, 17.1kg, Bluetooth app
                             </div>
                          
                             
@@ -87,6 +88,21 @@
                                 Versicherung und Nummernschild inklusive,<br>
                                 40km Reichweite, 17.1kg, Bluetooth app
                             </div>
+                         
+                            
+                        </div>
+                    </a>
+                <?php endforeach; ?>
+                
+                
+                
+                
+                <?php foreach($data as $scooter): ?>
+                    <a href="">
+                        
+                    <div class="singlescooter product1">
+                    <div class="scooterimg 1">
+                                <img   src="https://res.cloudinary.com/grover/image/upload/e_trim/f_webp,q_auto/b_white,c_pad,h_300,w_300/v1650546624/c2ujbogyzmfgtlxpovzi.png" alt="Segway Ninebot F40D E-Scooter">    
                             </div>
                             <div class="singlescooterhead 1">
                                 <h3 style="color: black;"><?= $scooter['title'] ?></h3><br>
@@ -125,11 +141,7 @@
                 <?php endforeach; ?>
             </div>
             
-            <div class="footer">
-         <a class="agb" href="pages/agb.php" target="_bottom">AGB</a>
-         <a class="datenschutzerklaerung" href="pages/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
-         <a class="impressum-footer" href="pages/impressum.php" target="_bottom">Impressum</a>
-         </div> 
+            
     </body>
     <script src="../assets/JS/slideshow.js"></script>
 </html>

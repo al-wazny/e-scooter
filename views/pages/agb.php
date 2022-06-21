@@ -1,9 +1,9 @@
-<?php include('../app/controllers/Pages.php'); ?>
+<?php include('../../app/controllers/Pages.php'); ?>
 
 <html>
     <head>
         <!---//TODO-->
-        <link rel="stylesheet" href="../../assets/css/index.css">
+        <link rel="stylesheet" href="../assets/css/index.css">
         <link rel="stylesheet" href="../../assets/css/agb.css">
         <title>ABG</title>
     </head>
@@ -25,12 +25,12 @@
 
 Diese Geschäftsbedingungen gelten für alle Käufe bei <a href="../views/impressum.php">Automic Scooters</a>, die von Privatkunden getätigt werden. 
 Privatkunden in diesem Sinne sind Personen mit Wohnsitz und Lieferadresse in der Bundesrepublik Deutschland, soweit die von ihnen bestellten Waren weder ihrer gewerblichen noch ihrer selbstständigen beruflichen Tätigkeit zugerechnet werden können. 
-Geschäftskunden werden gebeten, Bestellungen auf den über den Geschäftskunden-Login erreichbaren Bestellseiten <!-----------[Link auf Geschäftskunden-Login]------> zu tätigen.
+Geschäftskunden werden gebeten, Bestellungen auf den über den Geschäftskunden-Login erreichbaren Bestellseiten zu tätigen.
 
 
 
 <p class="unter-titel">Preise und Versandkosten</p>
-Die ausgezeichneten Preise sind Endpreise inkl. Umsatzsteuer. Es gilt der Betrag, der jeweils zum Zeitpunkt der verbindlichen Bestellung ausgewiesen ist. Hinzu kommen Versandkosten, die von der Versandart und der Größe und dem Gewicht der von Ihnen bestellten Ware(n) abhängig sind. Über die Einzelheiten können Sie sich unter [Link auf „Versandkosten"] informieren. Die regelmäßigen Kosten der Rücksendung, die im Falle einer Rückgabe der Ware durch Sie in Ausübung Ihres Widerrufsrechts [Link auf „Widerrufsrecht"] entstehen, tragen wir. Bei Ausübung Ihres Widerrufsrechts erstatten wir Ihnen auch die Versandkosten zurück.
+Die ausgezeichneten Preise sind Endpreise inkl. Umsatzsteuer. Es gilt der Betrag, der jeweils zum Zeitpunkt der verbindlichen Bestellung ausgewiesen ist. Hinzu kommen Versandkosten, die von der Versandart und der Größe und dem Gewicht der von Ihnen bestellten Ware(n) abhängig sind. Über die Einzelheiten können Sie sich unter informieren. Die regelmäßigen Kosten der Rücksendung, die im Falle einer Rückgabe der Ware durch Sie in Ausübung Ihres Widerrufsrechts entstehen, tragen wir. Bei Ausübung Ihres Widerrufsrechts erstatten wir Ihnen auch die Versandkosten zurück.
 
 
 
@@ -118,11 +118,7 @@ Schlussbestimmungen
 
 
 
-<div class="footer">
-         <a class="agb" href="../views/agb.php" target="_bottom">AGB</a>
-         <a class="datenschutzerklaerung" href="../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
-         <a class="impressum-footer" href="../views/impressum.php" target="_bottom">Impressum</a>
-         </div>  
+
 
 
 
