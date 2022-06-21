@@ -1,8 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="../../assets/css/styles.css">
-        <link rel="stylesheet" href="../../assets/css/miete.css">
-        <link rel="stylesheet" href="../../assets/css/confirm.css">
+        <link rel="stylesheet" href="../../assets/css/confirm.css?v=<?php echo time(); ?>">
     </head>
     <body>
     <header>
