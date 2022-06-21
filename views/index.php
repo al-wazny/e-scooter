@@ -52,7 +52,7 @@
             
             <div class="beispielprodukte">
                 <?php foreach($data as $scooter): ?>
-                    <a href="">
+                    <a href="pages/scooter.php?id=<?= $scooter['id'] ?>">
                         
                     <div class="singlescooter product1">
                     <div class="scooterimg 1">
@@ -64,20 +64,8 @@
                             <div class="singlescooterinfo 1">
                             <?= $scooter['description'] ?>
                             </div>
-                         
-                            
-                        </div>
-                    </a>
-                <?php endforeach; ?>
-                
-                
-                
-                
-                <?php foreach($data as $scooter): ?>
-                    <a href="">
-                        
-                    <div class="singlescooter product1">
-                    <div class="scooterimg 1">
+                        <div class="singlescooter product1">
+                            <div class="scooterimg 1">
                                 <img   src="https://res.cloudinary.com/grover/image/upload/e_trim/f_webp,q_auto/b_white,c_pad,h_300,w_300/v1650546624/c2ujbogyzmfgtlxpovzi.png" alt="Segway Ninebot F40D E-Scooter">    
                             </div>
                             <div class="singlescooterhead 1">
@@ -95,15 +83,10 @@
                                 Versicherung und Nummernschild inklusive,<br>
                                 40km Reichweite, 17.1kg, Bluetooth app
                             </div>
-                         
-                            
                         </div>
                     </a>
                 <?php endforeach; ?>
-               
-               
-               
-               
+
                 <?php foreach($data as $scooter): ?>
                     <a href="">
                         
