@@ -13,11 +13,10 @@ include('../../app/controllers/Pages.php'); ?>
     include('../pagelets/header.php');
     ?>
  </header>
- <form action="confirm.php">
-     <div class="scooter">
-         <div class="scootername">
-             <br>
-             <img src="<?= "data:image/jpeg;base64,".base64_encode($data->images) ?>" alt="">
+    <form action="confirm.php" method="get">
+        <div class="scooter">
+            <div class="scootername">
+                <br><img src="<?= "data:image/jpeg;base64,".base64_encode($data->images) ?>" alt="">
             </div>
             <div class="information">
                 <div class="title">
@@ -30,23 +29,25 @@ include('../../app/controllers/Pages.php'); ?>
                     <table>
                         <tr>
                             <td>Startdatum</td>
-                            <td><input type="date" placeholder="Startdatum"></td>
+                            <td><input type="date" name="startDate" placeholder="Startdatum"></td>
                         </tr>
                         <tr>
                             <td>Enddatum</td>
-                            <td><input type="date" placeholder="Enddatum"></td>
+                            <td><input type="date" name="endDate" placeholder="Enddatum"></td>
+                            <input type="hidden" name="scooterId" value="<?=$data->id?>">
                         </tr>
                     </table>
                 </div>
                 <div class="price">
                     <b><span><?= $data->price?></span> Pro Tag<b><br>
-                    </div>
-                    <div class="scooterbutton 1">
-                        <button type="submit">Jetzt Mieten</button>
-                    </div>
+                </div>
+                <div class="scooterbutton 1">
+                    <button type="submit">Jetzt Mieten</button>
                 </div>
             </div>
-    </div>
+        </div>
+    </form>
+        
     <div class="scooterinformation">
         <div class="scooterInformnationText">
             <h2>Information</h2>

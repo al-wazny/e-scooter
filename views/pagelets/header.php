@@ -16,9 +16,13 @@
             <a class="CompanyLogo" href="../index.php"> 
                    <img class="CompanyLogo" src="../../assets/Images/AtomLogo.png" alt="Company Logo">
                 </a>
-               <a class="register" href=" " target="_top" >Registrieren</a>
-                <a class="login" href=" " target="_top">Einloggen</a> 
-               
+                
+                <?php if($_SESSION['username'] == ''): ?>
+                    <a class="register" href=" " target="_top" >Registrieren</a>
+                    <a class="login" href=" " target="_top">Einloggen</a> 
+                <?php else: ?>
+                    <p style="color: red">username: <?= $_SESSION['username'] ?></p>
+                <?php endif; ?>
                
                 <div id="mySidebar" class="sidebar">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>

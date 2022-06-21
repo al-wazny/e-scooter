@@ -1,4 +1,4 @@
-<?php include('../../app/controllers/Authentication.php'); ?>
+<?php include('../../app/controllers/Checkout.php'); ?>
 
 <html>
     <head>
@@ -44,16 +44,16 @@
                         <td colspan="3"><b>Produkt:</b></td>
                     </tr>
                     <tr>
-                         <td colspan="3">Datum der Mietung: </td>
+                         <td colspan="3">Datum der Mietung: <?=date("m.d.y");?></td>
                     </tr>
                     <tr>
-                        <td>Name:</td>
-                        <td colspan="2">hier kommt img<img src="" alt=""></td>
+                        <td>Name: <?= $scooter->title ?></td>
+                        <td colspan="2"><img height="150" src="<?= "data:image/jpeg;base64,".base64_encode($scooter->images) ?>" alt=""></td>
                     </tr>
                     <tr>
-                        <td>Dauer:</td>
-                        <td>Preis pro Tag:</td>
-                        <td>Summe:</td>
+                        <td>Dauer: <?= $dateDiff ?></td>
+                        <td>Preis pro Tag <?= $scooter->price ?></td>
+                        <td>Summe: <?= $priceSum ?></td>
                     </tr>
                 </table>
             </div>
