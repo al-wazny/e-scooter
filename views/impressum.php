@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="../assets/css/index.css">
         <link rel="stylesheet" href="../assets/css/slideshow.css">
         <link rel="stylesheet" href="../assets/css/burger.css">
+        <link rel="stylesheet" href="../assets/css/impressum.css">
+
         <title>Impressum</title>
     </head>
     <body>
@@ -60,13 +62,13 @@ Diese Website benutzt Google Adsense, einen Webanzeigendienst der Google Inc., U
  </div>
  <div class="footer">
          <a class="agb" href="../views/agb.php" target="_bottom">AGB</a>
-         <a class="impressum" href="../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
-         <a class="impressum" href="../views/impressum.php" target="_bottom">Impressum</a>
+         <a class="datenschutzerklaerung" href="../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
+         <a class="impressum-footer" href="../views/impressum.php" target="_bottom">Impressum</a>
+         </div>     
+
+
+
         
-
-
-
-        </div>
  
 </body>
 </html>

@@ -95,13 +95,9 @@ Datenschutzerklärung erstellt mit dem Trusted Shops Rechtstexter in Kooperation
 
 <div class="footer">
          <a class="agb" href="../views/agb.php" target="_bottom">AGB</a>
-         <a class="impressum" href="../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
-         <a class="impressum" href="../views/impressum.php" target="_bottom">Impressum</a>
-        
-
-
-
-        </div>
+         <a class="datenschutzerklaerung" href="../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
+         <a class="impressum-footer" href="../views/impressum.php" target="_bottom">Impressum</a>
+         </div>  
 
 </body>
 </html>
