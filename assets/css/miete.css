@@ -1,36 +1,37 @@
 .miete{
-    background-color: white;
-    border-radius: 24px;
-    width: 800;
-    height: 400;
-    margin-top: 2cm;
-   margin-left: 15cm;
-   display:   inline-block;
-   visibility:  visible;
+  background-color: white;
+  border-radius: 24px;
+  width: 800;
+  height: 400;
+  margin-top: 2cm;
+ margin-left: 10cm;
+ display:   inline-block;
+ visibility:  visible;
 }
-
-
+input{
+    margin-left: 10px;
+    border-radius: 25px;
+    height: 33;
+    width: 200;
+}
+button{
+    margin-top: 25px;
+    margin-left: 5.8cm;
+    width: 30%;
+    display: inline-block;
+    height: 50;
+    color: rgb(255, 255, 255);
+    background-color: rgb(205, 75, 75);
+    border: 2px solid transparent;
+    border-radius: 88px;
+    cursor: pointer;
+}
+.table{
+  margin-left: 2cm;
+}
+td{
+ padding: 10px 10px;
+ }
+ span{
  
-  input{
-      margin-left: 10px;
-      border-radius: 25px;
-      height: 33;
-      width: 200;
-  }
-  button{
-      margin-top: 25px;
-      margin-left: 10px;
-      width: 99.7%;
-      height: 50;
-      color: rgb(255, 255, 255);
-      background-color: rgb(36, 35, 35);
-      border: 2px solid transparent;
-      border-radius: 88px;
-      cursor: pointer;
-  }
-  .table{
-    margin-left: 2cm;
-  }
- td{
-   padding: 10px 10px;
-   }
+ }

@@ -5,33 +5,31 @@ include('../../app/controllers/Pages.php'); ?>
 
 
 <head>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
-    <link rel="stylesheet" href="../../assets/css/scooter1.css">
+     <link rel="stylesheet" href="../../assets/css/scooter1.css?v=<?php echo time(); ?>">
 </head>
 <body>
-    <header>
-        <a class="CompanyLogo" href="../index.html"> 
-            <img class="CompanyLogo" src="../../assets/Images/CompanyLogo.png" alt="Company Logo">
-        </a>
-        <a class="login" href=" " target="_top">Anmelden</a>
-       
-        <div class="bar">
-            <div class="Categoriesbar">
-                <h3 class="Categories">Categories</h3>
-            </div>   
-         </div>
-    </header>
+<header>
+    <?php
+    include('../pagelets/header.php');
+    ?>
+ </header>
     <div class="scooter">
         <div class="scootername">
             <br>
             <img src="<?= "data:image/jpeg;base64,".base64_encode($data->images) ?>" alt="">
         </div>
             <div class="information">
-                <h4><?= $data->title ?></h4>
-                <b><?= $data->price?><b><br>
-                <b><?= $data->description?></b>
+                <div class="title">
+                    <h4><?= $data->title ?></h4>
+                </div>
+                <div class="description">
+                    <span><?= $data->description?></span>
+                </div>
+                <div class="price">
+                    <b><span><?= $data->price?></span> Pro Tag<b><br>
+                </div>
                 <div class="scooterbutton 1">
-                    <button type=" button">Jetzt Mieten</button>
+                  <a href="miete.php"><button type=" button">Jetzt Mieten</button></a>
                 </div>
             </div>
     </div>

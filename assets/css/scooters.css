@@ -103,16 +103,19 @@ border-color: rgb(241, 241, 241);
 }  
 
 .scooterbutton button{
-
 float: left;
 display: block;
 text-align: left;
 padding: 0px 30px;
 height: 48;
 color: rgb(255, 255, 255);
-background-color: rgb(254, 18, 18);
+background-color: rgb(205, 75, 75);
 border: 2px solid transparent;
 border-radius: 88px;
 display: block;
 cursor: pointer;
+}
+.scooterbutton a{
+text-decoration: none;
+color: rgb(255, 255, 255);
 }
