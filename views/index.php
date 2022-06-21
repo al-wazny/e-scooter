@@ -149,11 +149,7 @@
 
 
 
-            <div class="footer">
-         <a class="agb" href="../views/agb.php" target="_bottom">AGB</a>
-         <a class="datenschutzerklaerung" href="../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
-         <a class="impressum-footer" href="../views/impressum.php" target="_bottom">Impressum</a>
-         </div> 
+            
     </body>
     <script src="../assets/JS/slideshow.js"></script>
 </html>

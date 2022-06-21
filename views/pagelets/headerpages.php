@@ -21,10 +21,10 @@
                
                 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
-  <a href="#">Marken</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a href="../../views/pages/scooters.php">Scooters</a>
+  <a href="../../views/agb.php">AGB</a>
+  <a href="../../views/datenschutzerklaerung.php">Datenschutz</a>
+  <a href="../../views/impressum.php">Impressum</a>
 </div>
                 
                 <div id="main">

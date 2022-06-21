@@ -1,15 +1,9 @@
 
-.footer{
-
-    vertical-align: bottom;
-    height: 25%;
-    background-color:white}
-    
-
-
     .impressum{
         display: block;
         color: white;
         text-align: center;
+        width: 950px;
+        margin: 0 auto;
     
     }

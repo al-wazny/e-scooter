@@ -8,19 +8,13 @@
         <link rel="stylesheet" href="../assets/css/header.css?v=<?php echo time(); ?>">
 
 
-        <link rel="stylesheet" href="../../assets/css/index.css?v=<?php echo time(); ?>">
-        <link rel="stylesheet" href="../../assets/css/slideshow.css?v=<?php echo time(); ?>">
-        <link rel="stylesheet" href="../../assets/css/sidebar.css?v=<?php echo time(); ?>">
-        <link rel="stylesheet" href="../../assets/css/burger.css?v=<?php echo time(); ?>">
-        <link rel="stylesheet" href="../../assets/css/header.css?v=<?php echo time(); ?>">
-
         <title> Automic Scooters</title>
     </head>
     <body>
         <div id="container">   
             
 
-            <a class="CompanyLogo" href="../../views/index.php"> 
+            <a class="CompanyLogo" href="../views/index.php"> 
                    <img class="CompanyLogo" src="../assets/Images/AtomLogo.png" alt="Company Logo">
                 </a>
                <a class="register" href=" " target="_top" >Registrieren</a>
@@ -29,10 +23,10 @@
                
                 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
-  <a href="#">Marken</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a href="../views/pages/scooters.php">Scooters</a>
+  <a href="../views/agb.php">AGB</a>
+  <a href="../views/datenschutzerklaerung.php">Datenschutz</a>
+  <a href="../views/impressum.php">Impressum</a>
 </div>
                 
                 <div id="main">

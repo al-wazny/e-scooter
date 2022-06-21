@@ -10,27 +10,14 @@
     </head>
     <body>
         <div id="container">   
-            <header>
-            
+        <header>
+            <?php
 
-            <a class="CompanyLogo" href="../views/index.php">  
-                   <img class="CompanyLogo" src="../assets/Images/AtomLogo.png" alt="Company Logo">
-                </a>
-               <a class="register" href=" " target="_top" >Registrieren</a>
-                <a class="login" href=" " target="_top">Einloggen</a> 
-                <div class="bar">
-                    <div class="Categoriesbar">
-                        <button>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </button>
-                    </div>
-                </div>
+    include('pagelets/header.php');
+
+    ?>
              
             </header>
-
-
             <div class="agb-text">
                 
 <p class="text-titel">Allgemeine Verkaufsbedingungen</p>
@@ -133,11 +120,7 @@ Schlussbestimmungen
 
 
 
-<div class="footer">
-         <a class="agb" href="../views/agb.php" target="_bottom">AGB</a>
-         <a class="datenschutzerklaerung" href="../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
-         <a class="impressum-footer" href="../views/impressum.php" target="_bottom">Impressum</a>
-         </div>  
+
 
 
 
