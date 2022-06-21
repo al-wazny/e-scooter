@@ -1,9 +1,9 @@
 .scooterproduct{
-  margin-left: 4cm;
+  margin-left: 0px;
 }
 .scooterproduct table{
 border-radius: 24px;
- margin-left: 6cm;
+ margin-left: 2cm;
 }
 .singlescooter{
 border: 2px solid #ddd;
@@ -12,7 +12,6 @@ padding: 5px;
 border-radius: 10px;
 box-shadow: 0 0 6px #000;
 margin: 15px;
-position:  static;
 width:590;
 background-color: rgb(255, 255, 255);
 outline: none;
@@ -60,12 +59,10 @@ display: -webkit-box;
 }
 .neben{
 border-radius: 24px;
-position: absolute;
 margin-left: 20px;
-display: inline;
 background: rgb(255, 255, 255);
-padding: 620px 15px;
 border-style: solid;
+padding: 0px 40px;
 border-color: rgb(241, 241, 241);
 }
 .singlescooterinfo{
@@ -74,14 +71,7 @@ border-color: rgb(241, 241, 241);
  visibility: visible;
  box-sizing: border-box;
  -webkit-font-smoothing: antialiased;
- margin: 0;
- padding: 0;
- border: 0;
- font: inherit;
-  display: block;
- -webkit-line-clamp: 2;
- -webkit-box-orient: vertical;
- overflow: hidden;
+
  margin-top: 60px;
  min-height: 38px;
   font-family: Inter, sans-serif;
@@ -103,16 +93,30 @@ border-color: rgb(241, 241, 241);
 }  
 
 .scooterbutton button{
-
 float: left;
 display: block;
 text-align: left;
 padding: 0px 30px;
 height: 48;
 color: rgb(255, 255, 255);
-background-color: rgb(254, 18, 18);
+background-color: rgb(205, 75, 75);
 border: 2px solid transparent;
 border-radius: 88px;
 display: block;
 cursor: pointer;
+}
+.scooterbutton a{
+text-decoration: none;
+color: rgb(255, 255, 255);
+}
+.scooter{
+  display: flex;
+  flex-direction: row; 
+}
+ .choose{
+  font-family: fangsong;
+  font-size: unset;
+  font-style: revert;
+  margin-top: 68px;
+  margin-bottom: 8px
 }

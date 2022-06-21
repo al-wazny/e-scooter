@@ -1,13 +1,5 @@
 <html>
     <head>
-        <!---//TODO-->
-        <link rel="stylesheet" href="../assets/css/index.css?v=<?php echo time(); ?>">
-        <link rel="stylesheet" href="../assets/css/slideshow.css?v=<?php echo time(); ?>">
-        <link rel="stylesheet" href="../assets/css/sidebar.css?v=<?php echo time(); ?>">
-        <link rel="stylesheet" href="../assets/css/burger.css?v=<?php echo time(); ?>">
-        <link rel="stylesheet" href="../assets/css/header.css?v=<?php echo time(); ?>">
-
-
         <link rel="stylesheet" href="../../assets/css/index.css?v=<?php echo time(); ?>">
         <link rel="stylesheet" href="../../assets/css/slideshow.css?v=<?php echo time(); ?>">
         <link rel="stylesheet" href="../../assets/css/sidebar.css?v=<?php echo time(); ?>">
@@ -21,7 +13,7 @@
             
 
             <a class="CompanyLogo" href="../../views/index.php"> 
-                   <img class="CompanyLogo" src="../assets/Images/AtomLogo.png" alt="Company Logo">
+                   <img class="CompanyLogo" src="../../assets/Images/AtomLogo.png" alt="Company Logo">
                 </a>
                <a class="register" href=" " target="_top" >Registrieren</a>
                 <a class="login" href=" " target="_top">Einloggen</a> 

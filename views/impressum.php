@@ -10,25 +10,13 @@
 
         <title>Impressum</title>
     </head>
-    <body>
-        <div id="container">   
+    <body>  
             <header>
-            
+            <?php
 
-            <a class="CompanyLogo" href="../views/index.php">  
-                   <img class="CompanyLogo" src="../assets/Images/AtomLogo.png" alt="Company Logo">
-                </a>
-               <a class="register" href=" " target="_top" >Registrieren</a>
-                <a class="login" href=" " target="_top">Einloggen</a> 
-                <div class="bar">
-                    <div class="Categoriesbar">
-                        <button>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </button>
-                    </div>
-                </div>
+    include('../pagelets/header.php');
+
+    ?>
              
             </header>
             <div class='impressum'>

@@ -5,6 +5,7 @@
         <!---//TODO-->
         <link rel="stylesheet" href="../assets/css/index.css">
         <link rel="stylesheet" href="../assets/css/burger.css">
+        <link rel="stylesheet" href="../assets/css/footer.css">
         <link rel="stylesheet" href="../assets/css/datenschutzerklaerung.css">
         <title>Datenschutzerklärung</title>
     </head>
@@ -97,7 +98,7 @@ Datenschutzerklärung erstellt mit dem Trusted Shops Rechtstexter in Kooperation
          <a class="agb" href="../views/agb.php" target="_bottom">AGB</a>
          <a class="datenschutzerklaerung" href="../views/datenschutzerklaerung.php" target="_bottom">Datenschutzerklärung</a>
          <a class="impressum-footer" href="../views/impressum.php" target="_bottom">Impressum</a>
-         </div>  
+         </div>   
 
 </body>
 </html>
