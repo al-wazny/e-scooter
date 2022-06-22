@@ -13,7 +13,7 @@
  </header>
     <div class="scooter">
         <div class="neben">
-            <form action="/action_page.php">
+            <form>
                 <div class="sort_by">
                     <div class="choose">
                         <label>SORTIEREN NACH</label><br>
@@ -36,7 +36,7 @@
                     </div>
                     <input type="checkbox" id="Segway" name="Segway" value="Segway_Scooter">
                     <label for="Segway"> Segway</label><br>
-                    <input type="checkbox" id="Xiaomi" name="Xiaomi " value="Xiaomi_Scooter">
+                    <input type="checkbox" id="Xiaomi" name="Xiaomi" value="Xiaomi_Scooter">
                     <label for="Xiaomi ">Xiaomi</label><br>
                     <input type="checkbox" id="Grover" name="Grover" value="Grover_Scooter">
                     <label for="Grover">Grover</label><br><br>
@@ -64,7 +64,7 @@
                                 Versicherung und Nummernschild inklusive,<br>
                                 40km Reichweite, 17.1kg, Bluetooth app
                             </div>
-                         
+                            <p><?=$scooter['price']?></p>
                             
                         </div>
                     </a>
