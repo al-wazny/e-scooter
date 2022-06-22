@@ -1,3 +1,6 @@
+<?php include('../../app/controllers/Checkout.php'); ?>
+
+
 <html>
     <head>
         <link rel="stylesheet" href="../../assets/css/styles.css">
@@ -31,29 +34,29 @@
                         <td colspan="3"><b>Date den Mieter</b></td>
                     </tr>
                     <tr>
-                        <td>Vorname:</td>
-                        <td>Nachname:</td>
-                        <td>Addresse:</td>
+                        <td>Vorname: <?= $user->firstname ?></td>
+                        <td>Nachname: <?= $user->lastname ?></td>
+                        <td>Addresse: <?= $user->street_housenumber ?></td>
                     </tr>
                     <tr>
-                        <td>Postleitzahl:</td>
-                        <td>Stadt:</td>
-                        <td>E-Mail:</td>
+                        <td>Postleitzahl: <?= $user->zip_code ?></td>
+                        <td>Stadt: <?= $user->city ?></td>
+                        <td>E-Mail: <?= $user->email ?></td>
                     </tr>
                     <tr>
                         <td colspan="3"><b>Produkt:</b></td>
                     </tr>
                     <tr>
-                         <td colspan="3">Datum der Mietung: </td>
+                         <td colspan="3">Datum der Mietung: <?=$_GET['startDate']?></td>
                     </tr>
                     <tr>
-                        <td>Name:</td>
-                        <td colspan="2">hier kommt img<img src="" alt=""></td>
+                        <td>Name: <?=$scooter->title?></td>
+                        <td colspan="2"><img height=200 src="<?= "data:image/jpeg;base64,".base64_encode($scooter->images) ?>" alt=""></td>
                     </tr>
                     <tr>
-                        <td>Dauer:</td>
-                        <td>Preis pro Tag:</td>
-                        <td>Summe:</td>
+                        <td>Dauer: <?=$dateDiff?> days</td>
+                        <td>Preis pro Tag: <?=$scooter->price?>$</td>
+                        <td>Summe: <?=$priceSum?>$</td>
                     </tr>
                 </table>
             </div>
