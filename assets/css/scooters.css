@@ -11,7 +11,6 @@
   box-shadow: 0 0 6px #000;
   margin: 15px;
   position:  static;
-  width:590;
   background-color: rgb(255, 255, 255);
   outline: none;
 }
@@ -24,7 +23,6 @@
  box-shadow: 0 0 2px rgb(153, 151, 151);
  margin: 15px;
  position: relative;
- width:590;
  background-color: rgb(255, 255, 255);
  cursor: context-menu;
  outline: #000 solid 2px;

@@ -3,6 +3,7 @@ include('../../app/controllers/Pages.php'); ?>
 <html>
 <head>
      <link rel="stylesheet" href="../../assets/css/scooter1.css?v=<?php echo time(); ?>">
+
 </head>
 <body>
 <header>
@@ -51,14 +52,14 @@ include('../../app/controllers/Pages.php'); ?>
                         <div class="scooterInformnationText">
                             <h2>Information</h2>
                             <div class="scooterinformation1">
+                                <b>Title</b><br>
+                                <label for="GEWICHT"><?= $data->title ?></label><br><br>
                                 <b>AKKUTYP</b><br>
                                 <label for="AKKUTYP">551 Wh</label><br><br>
                                 <b>RADGRÖSSE</b><br>
                                 <label for="RADGRÖSSE">10 Zoll</label><br><br>
                                 <b>MAXIMALE LEISTUNG</b><br>
                                 <label for="MAXIMALE LEISTUNG"><?= $data->maxOutput ?> Watt</label><br><br>
-                                <b>GEWICHT</b><br>
-                                <label for="GEWICHT"><?= $data->title ?></label><br><br>
                                 <b>MAX. GESCHWINDIGKEIT</b><br>
                                 <label for="MAX. GESCHWINDIGKEIT"><?= $data->maxSpeed ?></label><br><br>
                             </div>

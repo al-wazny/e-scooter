@@ -31,7 +31,7 @@ border-radius: 10px;
 box-shadow: 0 0 6px #000;
 margin: 15px;
 position:  static;
-width: 310px;;
+width: 363px;
 background-color: rgb(255, 255, 255);
 outline: none;
 
@@ -45,7 +45,7 @@ outline: none;
  box-shadow: 0 0 2px rgb(153, 151, 151);
  margin: 15px;
  position: relative;
- width: 310px;
+ width: 367px;
  background-color: rgb(255, 255, 255);
  cursor: context-menu;
  outline: #000 solid 2px;

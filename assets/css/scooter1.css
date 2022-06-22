@@ -1,14 +1,15 @@
 .scooter {
-    display: flex;
-    flex-direction: row; 
-    margin-left: 5cm;
+    background: rgb(255, 255, 255);
+    margin-left: 13cm;
+    width: 40%;
    }
  
 .scootername{
     background: rgb(255, 255, 255);
-    float: right;
-    border-radius: 20px;
-    margin-left: 20px;
+     border-radius: 20px;
+    margin-left: 190px;
+    width: 35%;
+    display: inline-block;
 }
   .information {
   border: 1cm; 
@@ -16,18 +17,16 @@
   background: rgb(255, 255, 255);
   margin-left: 20px;
   height: 336;
-  max-width: 35%;
-  width: 35%;
+  width: 90%;
 }
 .scootername img {
      border-radius: 20px;
     }
     .scooterinformation{
         background-color: white;
-        border-radius: 24px;
-        margin-left: 5.5cm;
-        margin-right: 5cm;
+        padding-right: 374px;
      }
+     
     .scooterInformnationText{
         margin-left: 20px;
     }
@@ -48,8 +47,7 @@
         margin-top: 10px;
         font-family: 'Times New Roman', Times, serif;
         font-style: italic;
-        margin-bottom: 10px;
-    }
+     }
     .price span{
         color: red;
         font-size: 20;
@@ -57,16 +55,18 @@
        .scooterbutton button{
         height: 48;
         width: 430;
-        margin-left: 15px;
+        margin-left: 100px;
         color: rgb(255, 255, 255);
         background-color: rgb(205, 75, 75);
         border: 2px solid transparent;
         border-radius: 88px;
         cursor: pointer;
+        margin-top: 18;
        }
-       .scooterbutton a{
-        text-decoration: none;
+       .scooterbutton span {
+        text-align: center;
         color: rgb(255, 255, 255);
+        margin-left: 144px;
        }
        .scooterinformation1 label{
         font-family: Inter, sans-serif;
@@ -92,13 +92,5 @@
         height: 33;
         width: 200;
     }
-    table {
-        padding-top: 10px;
-    }
-    td{
-        padding: 10px 10px;
-        margin-top: 5px;
-
-        }
 
  
