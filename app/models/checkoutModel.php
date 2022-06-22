@@ -31,7 +31,9 @@ class CheckoutModel
 
     public function updateDbRecord($id, $duration)
     {
-        $query = "UPDATE scooters SET isAvailable=0, duration=$duration WHERE id=$id";
+        $user = $this->getUserInfo();
+        $userId = $user->id;
+        $query = "UPDATE scooters SET isAvailable=0, duration=$duration, currentOwner=$userId WHERE id=$id";
         return $this->db->query($query);
     }
 }
