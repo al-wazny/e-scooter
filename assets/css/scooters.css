@@ -133,7 +133,7 @@ color: rgb(255, 255, 255);
 
 .produkt-grid{
   display: grid;
-  grid-template-columns: 320px 320px;
+  grid-template-columns: 320px 320px 320px;
   column-gap: 65px;
   align-items: center;
   }
@@ -141,16 +141,14 @@ color: rgb(255, 255, 255);
   .price{
 margin-top: 130px;
 color: red;
-        
         font-family: 'Times New Roman', Times, serif;
         font-style: italic;
-
-
   }
   .description{
   margin-top: -3px;
-
-
+  }
+  .sort_by{
+    width: 163px;
   }
   
   
