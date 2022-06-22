@@ -63,3 +63,19 @@ img.CompanyLogo {
     width: 130;
     margin-bottom: 10px;
 }
+
+.username {
+    float: right;
+    display: block;
+    color: #e6e6e6;
+    text-align: center;
+    width: 130px;
+    background-color: rgb(205, 75, 75);
+    padding: 15px ;
+    margin-top: 87px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

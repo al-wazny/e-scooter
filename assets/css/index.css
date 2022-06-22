@@ -127,10 +127,10 @@ cursor: pointer;
 .beispielprodukte{
 display: grid;
 grid-template-columns: 320px 320px;
-column-gap: 10px;
-row-gap: 10px;
+column-gap: 65px;
+
 align-items: center;
-margin-left: 290px;
+margin-left: 238px;
 }
 
 

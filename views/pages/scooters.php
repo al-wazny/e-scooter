@@ -61,9 +61,10 @@
                                 <h3 style="color: black;"><?= $scooter['title'] ?></h3><br>
                             </div>
                             <div class="singlescooterinfo 1">
-                            <?= $scooter['description'] ?>
+                            <p class="description"><?= $scooter['description'] ?>Versicherung und Nummernschild inklusive,<br>
+                                40km Reichweite, 17.1kg, Bluetooth app</p>
                             </div>
-                            <p><?=$scooter['price']?></p>
+                            <p class="price"><?=$scooter['price']?></p>
                             
                         </div>
                     </a>

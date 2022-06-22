@@ -54,7 +54,7 @@ include('../app/controllers/Pages.php'); ?>
             
             <div class="beispielprodukte">
                 <?php foreach($data as $scooter): ?>
-                    <a href="">
+                    <a href="pages/scooter.php?id=<?=$scooter['id']?>">
                         
                     <div class="singlescooter product1">
                     <div class="scooterimg 1">
@@ -77,7 +77,7 @@ include('../app/controllers/Pages.php'); ?>
                 
                 
                 <?php foreach($data as $scooter): ?>
-                    <a href="">
+                    <a href="pages/scooter.php?id=<?=$scooter['id']?>">
                         
                     <div class="singlescooter product1">
                     <div class="scooterimg 1">
@@ -100,7 +100,7 @@ include('../app/controllers/Pages.php'); ?>
                 
                 
                 <?php foreach($data as $scooter): ?>
-                    <a href="">
+                    <a href="pages/scooter.php?id=<?=$scooter['id']?>">
                         
                     <div class="singlescooter product1">
                     <div class="scooterimg 1">
@@ -123,7 +123,7 @@ include('../app/controllers/Pages.php'); ?>
                
                
                 <?php foreach($data as $scooter): ?>
-                    <a href="">
+                    <a href="pages/scooter.php?id=<?=$scooter['id']?>">
                         
                     <div class="singlescooter product1">
                     <div class="scooterimg 1">

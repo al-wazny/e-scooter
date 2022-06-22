@@ -2,6 +2,7 @@
     background: rgb(255, 255, 255);
     margin-left: 13cm;
     width: 40%;
+    border-radius: 5px;
    }
  
 .scootername{
@@ -21,10 +22,16 @@
 }
 .scootername img {
      border-radius: 20px;
+     height: 500px;
+     width: auto;
+     margin-left: -150px;
     }
     .scooterinformation{
         background-color: white;
         padding-right: 374px;
+        margin-top: -25px;
+        width:614px;
+        margin-left: -6px;
      }
      
     .scooterInformnationText{
@@ -55,7 +62,7 @@
        .scooterbutton button{
         height: 48;
         width: 430;
-        margin-left: 100px;
+        margin-left: 70px;
         color: rgb(255, 255, 255);
         background-color: rgb(205, 75, 75);
         border: 2px solid transparent;

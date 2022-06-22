@@ -17,8 +17,8 @@
                    <img class="CompanyLogo" src="../assets/Images/AtomLogo.png" alt="Company Logo">
                 </a>
                 <?php if(!isset($_SESSION['username']) || $_SESSION['username'] == ''): ?>
-                    <a class="register" href="../pages/registrate.php " target="_top" >Registrieren</a>
-                    <a class="login" href="../pages/login.php " target="_top">Einloggen</a> 
+                    <a class="register" href="pages/registrate.php " target="_top" >Registrieren</a>
+                    <a class="login" href="pages/login.php " target="_top">Einloggen</a> 
                 <?php else: ?>
                     <p style="color: red;"><?= "username: ". $_SESSION['username'] ?></p>
                 <?php endif ?>
