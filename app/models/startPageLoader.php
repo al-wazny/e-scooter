@@ -16,10 +16,61 @@ class startPageLoader
 
     private function getScooters()
     {
-        $query = "SELECT * FROM scooters";
+        $query = $this->getQueryByFilterSettings();
         $this->db->query($query);
 
-        return $this->db->resultSet();
+        $scooters = $this->db->resultSet();
+        return $this->filterByManufactor($scooters);
+    }
+
+    private function getQueryByFilterSettings()
+    {
+        $query = "SELECT * FROM scooters";
+
+        if (isset($_GET['availability'])) {
+            $query .= " WHERE isAvailable=1";
+        }
+
+        if (!isset($_GET['price'])) {
+            $query .= " ORDER BY price";
+        } else  {
+            switch ($_GET['price']) {
+                case 'top_product':
+                    $query .= " ORDER BY price";
+                    break;
+                
+                case 'worst_product':
+                    $query .= " ORDER BY price DESC";
+                    break;
+            }
+        }
+       
+        return $query;
+    }
+
+    private function filterByManufactor($scooters) 
+    {
+        $filteredScooters = [];
+        $manufactor = [];
+
+        if (isset($_GET['Segway'])) {
+            array_push($manufactor, 'Segway');
+        }
+        if (isset($_GET['Xiaomi'])) {
+            array_push($manufactor, 'xiaomi');
+        }
+        if (isset($_GET['Grover'])) {
+            array_push($manufactor, 'Grover');
+        }
+        if (!empty($manufactor)) {
+            foreach($scooters as $scooter) {
+                if (in_array($scooter['manufactor'], $manufactor)) {
+                    array_push($filteredScooters, $scooter);
+                }
+            }
+            return $filteredScooters;
+        }
+        return $scooters;
     }
 
     public function getScooter($id)
