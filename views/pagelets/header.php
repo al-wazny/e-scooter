@@ -23,7 +23,7 @@
                     <a class="register" href="../pages/registrate.php " target="_top" >Registrieren</a>
                     <a class="login" href="../pages/login.php " target="_top">Einloggen</a> 
                 <?php else: ?>
-                    <p style="color: red;"><?= "username: ". $_SESSION['username'] ?></p>
+                    <p class="username" style="color: red;"><?= "username: ". $_SESSION['username'] ?></p>
                 <?php endif ?>
 
                 <div id="mySidebar" class="sidebar">
