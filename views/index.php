@@ -62,8 +62,8 @@
                                 <h3 style="color: black;"><?= $scooter['title'] ?></h3><br>
                             </div>
                             <div class="singlescooterinfo 1">
-                                Versicherung und Nummernschild inklusive,<br>
-                                40km Reichweite, 17.1kg, Bluetooth app
+                            Versicherung und Nummernschild inklusive,<br>
+                            65 km Reichweite, 19.9 kg, Bluetooth app
                             </div>
                          
                             

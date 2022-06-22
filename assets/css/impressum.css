@@ -5,7 +5,7 @@
       display: block;
       color: white;
       text-align: center;
-      width: 950px;
+      width: 70%;
       margin: 0 auto;
   
   }
@@ -14,9 +14,35 @@
         flex-direction: row;
        
     }
-    .card {
+    .card-anwar{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        max-width: 300px;
+        padding:0px 20px;
+        margin: 0px 10px;
+        margin-left: 50px;
+        text-align: center;
+        font-family: arial;
+        background-color: rgba(255, 255, 255, 0.21);
+        border-radius: 10px;
+        border: #f2f2f2;
+        border-style: solid;
+        border-width: 5px;
+      }
+      .card-miro{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding:0px 20px;
+        margin: 0px 10px;
+        margin-left: 50px;
+        text-align: center;
+        font-family: arial;
+        background-color: rgba(255, 255, 255, 0.21);
+        border-radius: 10px;
+        border: #f2f2f2;
+        border-style: solid;
+        border-width: 5px;
+      }
+      .card-ali{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding:0px 20px;
         margin: 0px 10px;
         margin-left: 50px;
         text-align: center;
@@ -30,7 +56,7 @@
       
       
       .title {
-        color: rgb(224, 28, 28);
+        color: rgb(236, 231, 231);
         font-size: 18px;
       }
       
@@ -56,3 +82,4 @@
       button:hover, a:hover {
         opacity: 0.7;
       }
+    

@@ -25,37 +25,36 @@
                 76135 Karlsruhe <br> 
                
                 <div class="cards">
-                        <div class="card">
+                        <div class="card-anwar">
                                 <img src="../../assets/Images/WhatsApp Image 2022-06-21 at 18.47.18.jpeg" alt="anwar" style="width:auto;height: 284px;margin-top:20px; padding:20px">
-                                <h1>Anwar Chaban</h1>
+                                <h1 class="anwar">Anwar Chaban</h1>
                                 <p class="title">ERP System Developer</p>
                                 <div style="margin: 24px 0;">
-                                <a href="#"><i class="fa fa-dribbble"></i></a> 
+                                <a href="https://instagram.com/anwar_chaban?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>  
-                                <a href="#"><i class="fa fa-linkedin"></i></a>  
                                 <a href="#"><i class="fa fa-facebook"></i></a> 
+                                <a href="#"><i class="fa fa-twitch"></i></a>
                                 </div>
                          </div>
-                         <div class="card">
+                         <div class="card-miro">
                                 <img src="../../assets/Images/Miro.png" alt="miro" style="width:auto;height: 284px;margin-top:20px; padding:20px; padding-left:15px;">
                                 <h1>Miroslav Dimitrov</h1>
-                                <p class="title">ERP System Developer</p>
+                                <p class="title">Frontend Developer</p>
                                 <div style="margin: 24px 0;">
-                                <a href="#"><i class="fa fa-dribbble"></i></a> 
+                                <a href="https://instagram.com/mirro_dimitrov?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>  
-                                <a href="#"><i class="fa fa-linkedin"></i></a>  
-                                <a href="#"><i class="fa fa-facebook"></i></a> 
+                                <a href="https://www.twitch.tv/cheesecake23"><i class="fa fa-twitch"></i></a>
                                 </div>
                          </div>
-                         <div class="card">
+                         <div class="card-ali">
                                 <img src="../../assets/Images/Ali.png" alt="ali" style="width:auto;height: 284px;margin-top:20px; padding:20px">
                                 <h1>Ali  Al-Wazny</h1>
-                                <p class="title">ERP System Developer</p>
+                                <p class="title">CTO</p>
                                 <div style="margin: 24px 0;">
-                                <a href="#"><i class="fa fa-dribbble"></i></a> 
-                                <a href="#"><i class="fa fa-twitter"></i></a>  
-                                <a href="#"><i class="fa fa-linkedin"></i></a>  
+                                <a href="https://instagram.com/the_yungboi_ali?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>   
                                 <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitch"></i></a>
                                 </div> 
                          </div>
                 </div>
