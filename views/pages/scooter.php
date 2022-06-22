@@ -53,11 +53,11 @@ include('../../app/controllers/Pages.php'); ?>
                             <h2>Information</h2>
                             <div class="scooterinformation1">
                                 <b>Title</b><br>
-                                <label for="GEWICHT"><?= $data->title ?></label><br><br>
+                                <label for="GEWICHT"><?= $data->title ?></label><br>
                                 <b>Max. tragbare last</b><br>
-                                <label for="MAXWEIGHT"><?=$data->maxWeight?> kg</label><br><br>
+                                <label for="MAXWEIGHT"><?=$data->maxWeight?> kg</label><br>
                                 <b>GEWICHT</b><br>
-                                <label for="RADGRÖSSE"><?=$data->scooterWeight?> kg</label><br><br>
+                                <label for="RADGRÖSSE"><?=$data->scooterWeight?> kg</label><br>
                                 <b>MAXIMALE LEISTUNG</b><br>
                                 <label for="MAXIMALE LEISTUNG"><?= $data->maxOutput ?> Watt</label><br><br>
                                 <b>MAX. GESCHWINDIGKEIT</b><br>

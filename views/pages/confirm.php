@@ -4,8 +4,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../../assets/css/styles.css">
-        <link rel="stylesheet" href="../../assets/css/miete.css">
-        <link rel="stylesheet" href="../../assets/css/confirm.css">
+        <link rel="stylesheet" href="../../assets/css/confirm.css?v=<?php echo time(); ?>">
     </head>
     <body>
     <header>
@@ -22,7 +21,7 @@
                 </center>
                 <div class="thanksinformation">
                     <big>
-                        <h4> Deine Reservierung wird bearbeitet und du erh&auml;ltst in K&uuml;rze eine Best&auml;tigung Inklusive die Rechnung per E-Mail. <br><br>
+                        <h4> 
                         Ihre Automic Team</h4>  
                     </big> 
                 </div>
@@ -35,11 +34,11 @@
                     </tr>
                     <tr>
                         <td>Vorname: <?= $user->firstname ?></td>
-                        <td>Nachname: <?= $user->lastname ?></td>
+                        <td>Postleitzahl: <?= $user->zip_code ?></td>
                         <td>Addresse: <?= $user->street_housenumber ?></td>
                     </tr>
                     <tr>
-                        <td>Postleitzahl: <?= $user->zip_code ?></td>
+                        <td>Nachname: <?= $user->lastname ?></td>
                         <td>Stadt: <?= $user->city ?></td>
                         <td>E-Mail: <?= $user->email ?></td>
                     </tr>
@@ -51,7 +50,7 @@
                     </tr>
                     <tr>
                         <td>Name: <?=$scooter->title?></td>
-                        <td colspan="2"><img height=200 src="<?= "data:image/jpeg;base64,".base64_encode($scooter->images) ?>" alt=""></td>
+                        <td colspan="3"><img height=200 src="<?= "data:image/jpeg;base64,".base64_encode($scooter->images) ?>" alt=""></td>
                     </tr>
                     <tr>
                         <td>Dauer: <?=$dateDiff?> days</td>
