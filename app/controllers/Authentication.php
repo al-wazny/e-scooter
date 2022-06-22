@@ -38,7 +38,7 @@ class Authentication extends Controller
         $_SESSION['uuid'] = $this->user['uuid'];
         $_SESSION['username'] = $this->user['username'];
 
-        header('location: ../..');
+        header('location: ../index.php');
     }
 
     public function registrationHandler($userData)

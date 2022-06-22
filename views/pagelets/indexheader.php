@@ -16,17 +16,20 @@
             <a class="CompanyLogo" href="../views/index.php"> 
                    <img class="CompanyLogo" src="../assets/Images/AtomLogo.png" alt="Company Logo">
                 </a>
-                <a class="register" href="pages/registrate.php " target="_top" >Registrieren</a>
-                <a class="login" href="pages/login.php " target="_top">Einloggen</a> 
-               
+                <?php if(!isset($_SESSION['username']) || $_SESSION['username'] == ''): ?>
+                    <a class="register" href="../pages/registrate.php " target="_top" >Registrieren</a>
+                    <a class="login" href="../pages/login.php " target="_top">Einloggen</a> 
+                <?php else: ?>
+                    <p style="color: red;"><?= "username: ". $_SESSION['username'] ?></p>
+                <?php endif ?>
                
                 <div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
-  <a href="pages/scooters.php">Scooters</a>
-  <a href="pages/agb.php">AGB</a>
-  <a href="pages/datenschutzerklaerung.php">Datenschutz</a>
-  <a href="pages/impressum.php">Impressum</a>
-</div>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+                    <a href="pages/scooters.php">Scooters</a>
+                    <a href="pages/agb.php">AGB</a>
+                    <a href="pages/datenschutzerklaerung.php">Datenschutz</a>
+                    <a href="pages/impressum.php">Impressum</a>
+                </div>
                 
                 <div id="main">
                 <div class="bar">

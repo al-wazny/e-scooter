@@ -45,7 +45,7 @@ include('../../app/controllers/Pages.php'); ?>
                     </table>
                 </div>
                 <div class="price">
-                    <b><span><?= $data->price?></span> Pro Tag<b><br>
+                    <b><span><?= $data->price?>$</span> Pro Tag<b><br>
                 </div>
                 </div>
                 <div class="scooterinformation">
@@ -54,10 +54,10 @@ include('../../app/controllers/Pages.php'); ?>
                             <div class="scooterinformation1">
                                 <b>Title</b><br>
                                 <label for="GEWICHT"><?= $data->title ?></label><br><br>
-                                <b>AKKUTYP</b><br>
-                                <label for="AKKUTYP">551 Wh</label><br><br>
-                                <b>RADGRÖSSE</b><br>
-                                <label for="RADGRÖSSE">10 Zoll</label><br><br>
+                                <b>Max. tragbare last</b><br>
+                                <label for="MAXWEIGHT"><?=$data->maxWeight?> kg</label><br><br>
+                                <b>GEWICHT</b><br>
+                                <label for="RADGRÖSSE"><?=$data->scooterWeight?> kg</label><br><br>
                                 <b>MAXIMALE LEISTUNG</b><br>
                                 <label for="MAXIMALE LEISTUNG"><?= $data->maxOutput ?> Watt</label><br><br>
                                 <b>MAX. GESCHWINDIGKEIT</b><br>

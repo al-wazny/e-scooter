@@ -11,11 +11,11 @@ include('../../app/controllers/Authentication.php');
 </head>
 <body>
     <div>
-        <p><a class="redirect" href="../../">Zurueck zur Startseite</a></p>
+        <p><a class="redirect" href="../index.php">Zurueck zur Startseite</a></p>
 
         <div class="login">
             <h1>Login</h1>
-            <form action="" method="post">
+            <form method="post">
                 <label for="username">
                     <i class="fas fa-user"></i>
                 </label>

@@ -1,5 +1,6 @@
 <?php session_start();
-include('C:\xampp\htdocs\e-scooter\app\controllers\Authentication.php');
+include('../../app/controllers/Authentication.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +11,7 @@ include('C:\xampp\htdocs\e-scooter\app\controllers\Authentication.php');
     <title>Title</title>
 </head>
 <body>
-<a class="redirect" href="../..">Zurueck zur Startseite</a>
+<a class="redirect" href="../index.php">Zurueck zur Startseite</a>
 <div class="login">
     <h1>Registration</h1>
     <form action="" method="post">

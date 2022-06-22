@@ -1,4 +1,6 @@
-<?php include('../app/controllers/Pages.php'); ?>
+<?php 
+session_start();
+include('../app/controllers/Pages.php'); ?>
 
 <html>
     <head>
@@ -10,7 +12,7 @@
     <body>
     <header>
     <?php
-    include('pagelets/indexheader.php');
+    include('./pagelets/indexheader.php');
     ?>
  </header>
                <!--------------------------------------------------Slider js script----------------------------------------------> 
